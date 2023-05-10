@@ -1,11 +1,11 @@
 @charset "UTF-8";
 /* ========================================================================
-Foundation - ファウンデーション
+Globals - グローバルズ
 ======================================================================== */
-@use "foundation/color" as *;
-@use "foundation/reset" as *;
-@use "foundation/mixin" as *;
-@use "foundation/variables" as *;
+@use "globals/color" as *;
+@use "globals/reset" as *;
+@use "globals/mixin" as *;
+@use "globals/variables" as *;
 
 /* ========================================================================
 	Layout - レイアウト
