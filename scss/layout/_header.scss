@@ -13,6 +13,10 @@
         align-items: center;
         justify-content: space-between;
         padding: 30px 3.6% 0;
+
+        @include mq("sp") {
+            padding: 20px 15px;
+        }
     }
 
     &-logoArea {
@@ -39,7 +43,14 @@
         border-radius: 42px;
 
         @include mq("sp") {
-            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 72px;
+            border-radius: 0;
+            display: grid;
+            place-items: center;
         }
     }
 
@@ -58,6 +69,11 @@
             @include mq("tab") {
                 margin-left: 24px;
             }
+            @include mq("sp") {
+                margin-left: 16px;
+                font-size: 11px;
+                white-space: nowrap;
+            }
         }
         
         &__btn {
@@ -70,9 +86,17 @@
                 width: 154px;
                 height: 42px;
             }
+            @include mq("sp") {
+                width: 134px;
+                height: 46px;
+            }
         }
         &__btnText {
             font-size: 14px;
+
+            @include mq("sp") {
+                font-size: 11px;
+            }
         }
     }
 

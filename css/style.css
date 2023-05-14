@@ -99,10 +99,23 @@ p {
   top: 140%;
   left: 0;
   z-index: 5;
+  background-color: #383940;
 }
 .section__enTitle--right {
   top: 160px;
   right: 60px;
+  right: 0;
+}
+@media (max-width: 1230px) {
+  .section__enTitle--right {
+    right: -60px;
+  }
+}
+@media (max-width: 1100px) {
+  .section__enTitle--right {
+    top: initial;
+    right: initial;
+  }
 }
 @media (max-width: 767px) {
   .section__enTitle--right {
@@ -110,7 +123,7 @@ p {
     right: initial;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1100px) {
   .section__enTitle {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -128,6 +141,14 @@ p {
   }
 }
 
+.gradation-text {
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; /* 切り抜いた部分は背景を表示 */
+  background: -webkit-linear-gradient(20deg, #4F60FF 0%, #383940 50%, #383940 100%); /* 背景色にグラデーションを指定 初期値を設定 */
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
 .btn {
   display: grid;
   place-items: center;
@@ -136,6 +157,103 @@ p {
 .btn__text {
   font-weight: bold;
   color: #fff;
+}
+
+.page-top {
+  height: 650px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.page-top::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url(../../images/strive-page-top-bg.png) no-repeat center center/cover;
+}
+@media (max-width: 767px) {
+  .page-top {
+    height: 350px;
+  }
+  .page-top::before {
+    width: 231px;
+    height: 231px;
+    bottom: -50px;
+    right: -50px;
+    background: none;
+    background: -webkit-linear-gradient(45deg, #801CFF 0%, #24F2FF 100%);
+    background: linear-gradient(45deg, #801CFF 0%, #24F2FF 100%);
+    -webkit-filter: blur(115px);
+            filter: blur(115px);
+  }
+}
+.page-top__titleArea {
+  width: 320px;
+  text-align: right;
+}
+@media (max-width: 767px) {
+  .page-top__titleArea {
+    text-align: left;
+  }
+}
+.page-top__title {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 70px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.48em;
+  background: -webkit-linear-gradient(1800deg, #606D76 0%, #fff 80%, #fff 100%); /* 背景色にグラデーションを指定 初期値を設定 */
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+@media (max-width: 767px) {
+  .page-top__title {
+    font-size: 43px;
+    letter-spacing: 0.4em;
+  }
+}
+.page-top__subTitle {
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 0.55em;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .page-top__subTitle {
+    font-size: 15px;
+  }
+}
+
+.page-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.page-contents {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  background-color: #fff;
+  border-radius: 45px 45px 0 0;
+}
+@media (max-width: 767px) {
+  .page-contents {
+    top: -32px;
+  }
 }
 
 .header {
@@ -161,6 +279,11 @@ p {
           justify-content: space-between;
   padding: 30px 3.6% 0;
 }
+@media (max-width: 767px) {
+  .header-inner {
+    padding: 20px 15px;
+  }
+}
 .header-logoArea {
   width: 92px;
   height: auto;
@@ -185,7 +308,14 @@ p {
 }
 @media (max-width: 767px) {
   .header-navArea {
-    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 72px;
+    border-radius: 0;
+    display: grid;
+    place-items: center;
   }
 }
 .header-ul {
@@ -208,6 +338,13 @@ p {
     margin-left: 24px;
   }
 }
+@media (max-width: 767px) {
+  .header-li__item {
+    margin-left: 16px;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+}
 .header-li__btn {
   width: 170px;
   height: 48px;
@@ -220,8 +357,19 @@ p {
     height: 42px;
   }
 }
+@media (max-width: 767px) {
+  .header-li__btn {
+    width: 134px;
+    height: 46px;
+  }
+}
 .header-li__btnText {
   font-size: 14px;
+}
+@media (max-width: 767px) {
+  .header-li__btnText {
+    font-size: 11px;
+  }
 }
 
 .footer-inner {
@@ -766,6 +914,104 @@ p {
   height: 1px;
   margin-top: 15px;
   background-color: #2746ED;
+}
+
+.page-about__titleArea {
+  width: 320px;
+}
+@media (max-width: 767px) {
+  .page-about__titleArea {
+    width: 185px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .ledVision__title {
+    margin-top: 120px;
+  }
+}
+.ledVision-inner {
+  padding: 140px 0;
+  position: relative;
+}
+@media (max-width: 1100px) {
+  .ledVision-inner {
+    padding: 24px 0 80px 0;
+  }
+}
+.ledVision-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .ledVision-container {
+    width: 100%;
+    display: block;
+  }
+}
+.ledVision-textArea {
+  width: 45.4%;
+}
+@media (max-width: 767px) {
+  .ledVision-textArea {
+    width: 100%;
+    max-width: 330px;
+    margin: 0 auto;
+  }
+}
+.ledVision__head {
+  font-size: 40px;
+  font-weight: normal;
+}
+@media (max-width: 767px) {
+  .ledVision__head {
+    font-size: 32px;
+    text-align: center;
+  }
+}
+.ledVision__text {
+  margin-top: 40px;
+  font-size: 15px;
+  line-height: 1.9;
+}
+@media (max-width: 767px) {
+  .ledVision__text {
+    margin-top: 24px;
+    font-size: 13px;
+  }
+}
+.ledVision-imgArea {
+  width: 48.4%;
+  border-radius: 8px;
+}
+@media (max-width: 767px) {
+  .ledVision-imgArea {
+    width: 100%;
+    height: 207px;
+    max-width: 330px;
+    margin: 20px auto 0;
+  }
+}
+.ledVision__img {
+  -webkit-box-shadow: 15px 15px 40px rgba(23, 52, 87, 0.15);
+          box-shadow: 15px 15px 40px rgba(23, 52, 87, 0.15);
+}
+@media (max-width: 767px) {
+  .ledVision__img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 /* ========================================================================
