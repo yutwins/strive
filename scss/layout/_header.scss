@@ -1,0 +1,79 @@
+@use "../globals/global" as *;
+
+.header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    &-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 3.6% 0;
+    }
+
+    &-logoArea {
+        width: 92px;
+        height: auto;
+
+        @include mq("sp") {
+            width: 61px;
+        }
+    }
+    &-logo {
+        display: block;
+        width: 100%;
+
+        &__img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &-navArea {
+        padding: 6px 7px;
+        background-color: $pureWhite;
+        border-radius: 42px;
+
+        @include mq("sp") {
+            display: none;
+        }
+    }
+
+    &-ul {
+        display: flex;
+        align-items: center;
+    }
+
+    &-li {
+
+        &__item {
+            margin-left: 32px;
+            font-size: 14px;
+            font-weight: bold;
+
+            @include mq("tab") {
+                margin-left: 24px;
+            }
+        }
+        
+        &__btn {
+            width: 170px;
+            height: 48px;
+            margin-left: 30px;
+            border-radius: 42px;
+
+            @include mq("tab") {
+                width: 154px;
+                height: 42px;
+            }
+        }
+        &__btnText {
+            font-size: 14px;
+        }
+    }
+
+}

@@ -1,3 +1,6 @@
+@use "../globals/color" as *;
+@use "../globals/variables" as *;
+
 $layout-width-inner: 1080px;
 
 // ブレイクポイント
@@ -14,10 +17,84 @@ $breakpoints: (
 }
 
 .inner {
-    width: min(100% - 2rem, 1200px);
+    width: min(100% - 2rem, 1025px);
     margin-inline: auto;
-    
-    // width: 1200px;
-    // max-width: 100%;
-    // margin: 0 auto;
+}
+
+.pc-only {
+    display: block;
+
+    @include mq("sp") {
+        display: none;
+    }
+}
+.sp-only {
+    display: none;
+
+    @include mq("sp") {
+        display: block;
+    }
+}
+
+.section {
+    position: relative;
+}
+
+.section__enTitle {
+    font-family: $Rajdhani;
+    letter-spacing: .7em;
+    font-size: 14px;
+    font-weight: 500;
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: 5;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 46px;
+        height: 1px;
+        position: absolute;
+        top: 140%;
+        left: 0;
+        z-index: 5;
+    }
+
+    &--right {
+        top: 160px;
+        right: 60px;
+        
+        @include mq("sp") {
+            top: initial;
+            right: initial;
+        }
+    }
+
+
+
+    @include mq("sp") {
+        transform: rotate(0deg);
+        position: relative;
+        text-align: center;
+        margin-top: 90px;
+
+        &::after {
+            width: 1px;
+            height: 36px;
+            top: -61px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.btn {
+    display: grid;
+    place-items: center;
+    background-color: $accent-color;
+
+    &__text {
+        font-weight: bold;
+        color: $pureWhite;
+    }
 }
