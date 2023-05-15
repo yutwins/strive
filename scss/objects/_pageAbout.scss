@@ -633,6 +633,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            gap: 5px;
 
             @include mq("sp") {
                 display: block;
@@ -657,8 +658,13 @@
                 }
             }
             
-            &--arrow {
+            &--arrowArea {
                 width: 85%;
+                display: grid;
+                place-items: center;
+            }
+            &--arrow {
+                width: 100%;
                 height: 5px;
 
                 @include mq("sp") {

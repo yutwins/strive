@@ -30,6 +30,14 @@
         <p class="copyright">© strive inc. All rights reserved.</p>
     </footer>
     <!-- /.footer -->
+    
+    <?php if (!is_front_page()) : ?>
+    </div>
+        <!-- /.page-contents -->
+        
+    </div>
+    <!-- /.page-container -->
+    <?php endif; ?>
 
     <?php wp_footer(); ?>
     </body>

@@ -1,0 +1,112 @@
+@use "../globals/global" as *;
+
+.pageContact {
+
+    &-inner {
+        padding-top: 120px;
+        padding-bottom: 100px;
+
+        @include mq("sp") {
+            padding-top: 60px;
+            padding-bottom: 80px;
+        }
+    }
+}
+
+.contact-form {
+    max-width: 625px;
+    margin: 0 auto;
+
+    &__dl {
+
+    }
+
+    &__row {
+
+        &:not(:first-child) {
+            margin-top: 30px;
+
+            @include mq("sp") {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    &__label {
+        font-weight: bold;
+    }
+
+    &__input {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    &__select,
+    textarea {
+        width: 100%;
+        padding: 16px;
+        background-color: $color-gray11;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+
+        &::placeholder {
+            color: $color-gray12;
+            font-size: 15px;
+
+            @include mq("sp") {
+                font-size: 13px;
+            }
+        }
+    }
+
+    &__select {
+        font-weight: 500;
+    }
+    textarea {
+        width: 100%;
+        height: 267px;
+        resize: vertical;
+
+         @include mq("sp") {
+            height: 174px;
+         }
+    }
+
+    &__submit {
+        width: 234px;
+        height: 58px;
+        margin: 0 auto;
+        display: grid;
+        place-items: center;
+        background-color: $base-color;
+        border-radius: 42px;
+        overflow: hidden;
+
+        @include mq("sp") {
+            width: 246px;
+            height: 57px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            color: $pureWhite;
+            font-size: 17px;
+            font-weight: bold;
+
+            @include mq("sp") {
+                font-size: 15px;
+            }
+        }
+    }
+}
