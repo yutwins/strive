@@ -12,7 +12,7 @@
         top: 0;
         // left: -50px;
         left: 0;
-        background: url(../../images/strive-hero-bg-gradation.png) no-repeat center center / cover;
+        background: url(../images/strive-hero-bg-gradation.png) no-repeat center center / cover;
     }
 
     &-textArea {
@@ -54,7 +54,7 @@
                 top: 50%;
                 left: 0;
                 transform: translateY(-50%);
-                background: url(../../images/strive-hero-text-img.png) no-repeat center center  / cover;
+                background: url(../images/strive-hero-text-img.png) no-repeat center center  / cover;
             }
 
             @include mq("sp") {
@@ -68,7 +68,7 @@
                     top: 155%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    background: url(../../images/strive-hero-text-img-sp.png) no-repeat center center / cover;
+                    background: url(../images/strive-hero-text-img-sp.png) no-repeat center center / cover;
                 }
             }
             @media (max-width: 450px) {

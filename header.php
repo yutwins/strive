@@ -14,7 +14,7 @@
 
     <!-- ②SEO対策の補助的措置 -->
     <!-- サイトのタイトル -->
-    <title>mixer</title>
+    <title>ストライブ株式会社</title>
     <!-- キーワード -->
     <meta name="keywords" content="">
     <!-- サイトの説明 -->
@@ -34,20 +34,48 @@
     <meta name="twitter:site" content="">
 
     <!-- ④その他の指定 -->
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
     <!-- faviconの指定 -->
     <link rel="shortcut icon" href="./favicon.ico">
-
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <!-- 外部のCSSファイル -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"> -->
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class() ?>>
     <header class="header">
-        
+        <div class="header-inner">
+            <div class="header-logoArea">
+                <a href="#" class="header-logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/strive-logo.png" alt="ロゴ" class="header-logo__img">
+                </a>
+            </div>
+            <div class="header-navArea">
+                <nav class="header-nav">
+                    <ul class="header-ul">
+                        <li class="header-li">
+                            <a href="#about" class="header-li__item">LEDについて</a>
+                        </li>
+                        <li class="header-li">
+                            <a href="#product" class="header-li__item">製品一覧</a>
+                        </li>
+                        <li class="header-li">
+                            <a href="#company" class="header-li__item">会社概要</a>
+                        </li>
+                        <li class="header-li">
+                            <a href="#contact" class="btn header-li__btn">
+                                <span class="btn__text header-li__btnText">お問い合わせ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
     <!-- /.header -->

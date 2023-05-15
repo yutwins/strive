@@ -1,6 +1,6 @@
 // ロゴslider  
-$(document).ready(function(){
-    $('.slider').slick({
+jQuery(document).ready(function(){
+    jQuery('.slider').slick({
       autoplay: true, //自動でスクロール
       autoplaySpeed: 0, //自動再生のスライド切り替えまでの時間を設定
       speed: 6000, //スライドが流れる速度を設定
@@ -28,7 +28,7 @@ $(document).ready(function(){
         }
       ]
     });
-    $('.slider').on('touchmove', function(event, slick, currentSlide, nextSlide){
-      $('.slider').slick('slickPlay');
+    jQuery('.slider').on('touchmove', function(event, slick, currentSlide, nextSlide){
+      jQuery('.slider').slick('slickPlay');
     });
 });

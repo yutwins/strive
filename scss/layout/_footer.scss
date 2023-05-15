@@ -1,6 +1,13 @@
 @use "../globals/global" as *;
 
 .footer {
+    position: relative;
+    z-index: 2;
+    background-color: $color-black01;
+
+    @include mq("sp") {
+        margin-bottom: 80px;
+    }
 
     &-inner {
         width: 85%;
@@ -9,11 +16,22 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @include mq("sp") {
+            width: 100%;
+            display: block;
+            padding-top: 80px;
+        }
     }
 
     &-logoArea {
         width: 150px;
         height: auto;
+
+        @include mq("sp") {
+            width: 102px;
+            margin: 0 auto;
+        }
     }
     &-logo {
         display: block;
@@ -28,18 +46,37 @@
 
     &-textArea {
         color: $pureWhite;
+
+        @include mq("sp") {
+            margin: 30px auto 0;
+        }
     }
 
     &-companyName {
-        font-weight: 500; 
+        font-weight: 500;
+
+        @include mq("sp") {
+            font-size: 14px;
+            text-align: center;
+        }
     }
     &-companyAddress {
         font-size: 12px;
+
+        @include mq("sp") {
+            margin-top: 8px;
+            text-align: center;
+        }
     }
     &-companyContact {
         font-family: $Rajdhani;
         font-size: 12px;
         font-weight: 500;
+
+        @include mq("sp") {
+            margin-top: 8px;
+            text-align: center;
+        }
     }
 
     &-nav {
@@ -50,6 +87,11 @@
         display: flex;
         align-items: center;
         gap: 32px;
+
+        @include mq("sp") {
+            justify-content: center;
+            gap: 24px;
+        }
     }
 
     &-list {
@@ -68,5 +110,9 @@
         font-size: 10px;
         color: $color-gray01;
         letter-spacing: .275em;
+
+        @include mq("sp") {
+            padding-top: 80px;
+        }
     }
 }
