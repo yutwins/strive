@@ -14,7 +14,7 @@
 
     <!-- ②SEO対策の補助的措置 -->
     <!-- サイトのタイトル -->
-    <title></title>
+    <title>ストライブ株式会社</title>
     <!-- キーワード -->
     <meta name="keywords" content="">
     <!-- サイトの説明 -->
@@ -34,16 +34,246 @@
     <meta name="twitter:site" content="">
 
     <!-- ④その他の指定 -->
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
     <!-- faviconの指定 -->
     <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- 外部のCSSファイル -->
-    <link rel="stylesheet" href="scss/style.scss">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="header-logoArea">
+                <a href="#" class="header-logo">
+                    <img src="./images/strive-logo.png" alt="ロゴ" class="header-logo__img">
+                </a>
+            </div>
+            <div class="header-navArea">
+                <nav class="header-nav">
+                    <ul class="header-ul">
+                        <li class="header-li">
+                            <a href="#about" class="header-li__item">LEDについて</a>
+                        </li>
+                        <li class="header-li">
+                            <a href="#product" class="header-li__item">製品一覧</a>
+                        </li>
+                        <li class="header-li">
+                            <a href="#company" class="header-li__item">会社概要</a>
+                        </li>
+                        <li class="header-li">
+                            <a href="#contact" class="btn header-li__btn">
+                                <span class="btn__text header-li__btnText">お問い合わせ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- /.header -->
 
+    <section class="section hero">
+        <div class="hero-textArea">
+            <div class="hero-textArea__upper">
+                <h1 class="hero-title">新たな時代を、</h1>
+            </div>
+            <div class="hero-textArea__bottom">
+                <h1 class="hero-title">照らす</h1>
+            </div>
+        </div>
+        <div class="hero-slider">
+            <div class="slider-container">
+                <div class="pc-only">
+                    <div class="slider">
+                        <div class="slider-item slider-item01">
+                            <img src="./images/strive-slider01.png" class="slider-item__img">
+                        </div>
+                        <div class="slider-item slider-item02">
+                            <img src="./images/strive-slider02.png" class="slider-item__img">
+                        </div>
+                        <div class="slider-item slider-item03">
+                            <img src="./images/strive-slider03.png" class="slider-item__img">
+                        </div>
+                        <div class="slider-item slider-item04">
+                            <img src="./images/strive-slider04.png" class="slider-item__img">
+                        </div>
+                        <div class="slider-item slider-item05">
+                            <img src="./images/strive-slider05.png" class="slider-item__img">
+                        </div>
+                        <div class="slider-item slider-item06">
+                            <img src="./images/strive-slider06.png" class="slider-item__img">
+                        </div>
+                        <div class="slider-item slider-item07">
+                            <img src="./images/strive-slider07.png" class="slider-item__img">
+                        </div>
+                        <div class="slider-item slider-item08">
+                            <img src="./images/strive-slider08.png" class="slider-item__img">
+                        </div>
+                    </div>
+                </div>
+                <div class="sp-only">
+                    <div class="slider">
+                        <div class="slider-item slider-item__sp">
+                            <img src="./images/strive-slider-img-sp.png" class="slider-item__img">
+                        </div>
+                        <div class="slider-item slider-item__sp">
+                            <img src="./images/strive-slider-img-sp.png" class="slider-item__img">
+                        </div>
+                        <div class="slider-item slider-item__sp">
+                            <img src="./images/strive-slider-img-sp.png" class="slider-item__img">
+                        </div>
+                        <div class="slider-item slider-item__sp">
+                            <img src="./images/strive-slider-img-sp.png" class="slider-item__img">
+                        </div>
+                    </div>
+                </div>
+                <!-- /.slider -->
+            </div>
+        </div>
+    </section>
+    <!-- /.hero -->
+
+    <section class="section mission">
+        <nav class="mission-nav">
+            <ul class="mission-ul">
+                <li class="mission-list"><a href="#" class="mission-list__item">LEDについて</a></li>
+                <li class="mission-list"><a href="#product" class="mission-list__item">製品一覧</a></li>
+                <li class="mission-list"><a href="#" class="mission-list__item">会社概要</a></li>
+                <li class="mission-list"><a href="#" class="btn mission-list__btn"><span class="btn__text mission-list__btnText">お問い合わせ</span></a></li>
+            </ul>
+        </nav>
+        <h4 class="section__enTitle section__enTitle--right mission__enTitle">MISSION</h4>
+        <div class="inner mission-inner">
+            <div class="mission-titleArea">
+                <h2 class="mission__title mission__title--upper">LEDビジョンで</h2>
+                <h2 class="mission__title mission__title--bottom">日本を明るく照らす</h2>
+            </div>
+            <div class="mission-textArea">
+                <p class="mission__text">
+                    新しい広告媒体として注目を集めているLEDビジョンは、飲食店やサッカースタジアム、イベント会場、会議室など、幅広い場面で活躍しています。LEDビジョンは、他のディスプレイと比べて断然明るく、様々なレイアウトに対応できるだけでなく、消費電力を抑え、ランニングコストが安いという特徴を持っています。私たちのミッションは、環境にも配慮しつつ、効果的な広告媒体としてのLEDを日本に普及させていくことです。
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- /.mission -->
+
+    <section class="section feature">
+        <h4 class="section__enTitle feature__enTitle">FEATURE</h4>
+        <div class="inner feature-inner">
+            <div class="feature-textArea">
+                <h2 class="feature__text--big">
+                    世界最高品質の<br class="pc-only">
+                    LED<br class="sp-only">ビジョンメーカーと<br>
+                    直接提携<br>
+                </h2>
+                <p class="feature__text--small">私たちは世界100カ国以上の国でLEDビジョンの製造実績がある大手のメーカーと直接契約を行い、最高基準の品質をもつLEDビジョンを提供しています。屋内 / 屋外広告、舞台展示、スポーツスタジアムのスコアボード等、世界中の様々な場面で活用されています。</p>
+            </div>
+        </div>
+    </section>
+    <!-- /.feature -->
+
+    <section id="product" class="section product">
+        <div class="inner product-inner">
+            <h4 class="section__enTitle section__enTitle--right product__enTitle">PRODUCT</h4>
+            <h2 class="product__title">製品一覧</h2>
+            <ul class="product-items">
+                <li class="product-item">
+                    <figure class="product-item__imgArea">
+                        <img src="./images/strive-product-item01.png" alt="屋内用LEDビジョン" class="product-item__img">
+                    </figure>
+                    <p class="product-item__subTitle">SV-CV Series</p>
+                    <h4 class="product-item__title">屋内用LEDビジョン</h4>
+                    <div class="product-item__underline"></div>
+                </li>
+                <li class="product-item">
+                    <figure class="product-item__imgArea">
+                        <img src="./images/strive-product-item02.png" alt="透過型LEDビジョン" class="product-item__img">
+                    </figure>
+                    <p class="product-item__subTitle">SV-TP Series</p>
+                    <h4 class="product-item__title">透過型LEDビジョン</h4>
+                    <div class="product-item__underline"></div>
+                </li>
+                <li class="product-item">
+                    <figure class="product-item__imgArea">
+                        <img src="./images/strive-product-item03.png" alt="屋内用LEDビジョン" class="product-item__img">
+                    </figure>
+                    <p class="product-item__subTitle">SV-ST Series</p>
+                    <h4 class="product-item__title">屋内用LEDビジョン </h4>
+                    <div class="product-item__underline"></div>
+                </li>
+                <li class="product-item">
+                    <figure class="product-item__imgArea">
+                        <img src="./images/strive-product-item04.png" alt="ポスター型LEDビジョン" class="product-item__img">
+                    </figure>
+                    <p class="product-item__subTitle">SV-PT Series</p>
+                    <h4 class="product-item__title">ポスター型LEDビジョン</h4>
+                    <div class="product-item__underline"></div>
+                </li>
+                <li class="product-item">
+                    <figure class="product-item__imgArea">
+                        <img src="./images/strive-product-item05.png" alt="屋外型LEDビジョン" class="product-item__img">
+                    </figure>
+                    <p class="product-item__subTitle">SV-AF Series</p>
+                    <h4 class="product-item__title">屋外型LEDビジョン</h4>
+                    <div class="product-item__underline"></div>
+                </li>
+                <li class="product-item">
+                    <figure class="product-item__imgArea">
+                        <img src="./images/strive-product-item06.png" alt="曲面対応屋外型LEDビジョン" class="product-item__img">
+                    </figure>
+                    <p class="product-item__subTitle">SV-MG Series</p>
+                    <h4 class="product-item__title">曲面対応屋外型LEDビジョン</h4>
+                    <div class="product-item__underline"></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- /.product -->
+
+    <footer class="footer">
+        <inner class="footer-inner">
+            <div class="footer-logoArea">
+                <a href="#" class="footer-logo">
+                    <img src="./images/strive-logo.png" alt="ロゴ" class="footer-logo__img">
+                </a>
+            </div>
+            <div class="footer-textArea">
+                <p class="footer-companyName">ストライブ株式会社</p>
+                <p class="footer-companyAddress">〒542-0073 大阪府大阪市中央区日本橋1-2-6 日本橋河辺ビル5F</p>
+                <p class="footer-companyContact">Tel.06-6484-871　Fax.06-6484-8717</p>
+                <nav class="footer-nav">
+                    <ul class="footer-ul">
+                        <li class="footer-list">
+                            <a href="" class="footer-list__item">LEDについて</a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="" class="footer-list__item">製品一覧</a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="" class="footer-list__item">会社概要</a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="" class="footer-list__item">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </inner>
+        <p class="copyright">© strive inc. All rights reserved.</p>
+    </footer>
+    <!-- /.footer -->
+
+    <!-- jQueryライブラリ読み込みコード -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- slickを読み込む -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

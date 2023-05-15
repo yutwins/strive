@@ -1,0 +1,755 @@
+@use "../globals/global" as *;
+
+.page-about__titleArea {
+    width: 320px;
+
+    @include mq("sp") {
+        width: 185px;
+    }
+}
+
+
+
+.ledVision {
+
+    &__enTitle {
+
+        @media (max-width: 1100px) {
+            margin-top: 120px;
+        }
+    }
+
+    &-inner {
+        padding: 140px 0;
+        position: relative;
+        
+        @media (max-width: 1100px) {
+            padding: 24px 0 80px 0;
+        }
+        @include mq("sp") {
+        }
+    }
+
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mq("sp") {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    &-textArea {
+        width: 45.4%;
+        
+        @include mq("sp") {
+            width: 100%;
+            max-width: 330px;
+            margin: 0 auto;
+        }
+    }
+
+    &__head {
+        font-size: 40px;
+        font-weight: normal;
+
+        @include mq("sp") {
+            font-size: 32px;
+            text-align: center; 
+        }
+    }
+
+    &__text {
+        margin-top: 40px;
+        font-size: 15px;
+        line-height: 1.9;
+
+        @include mq("sp") {
+            margin-top: 24px;
+            font-size: 13px;
+        }
+    }
+
+    &-imgArea {
+        width: 48.4%;
+        border-radius: 8px;
+
+        @include mq("sp") {
+            width: 100%;
+            height: 207px;
+            max-width: 330px;
+            margin: 20px auto 0;
+        }
+    }
+    &__img {
+        box-shadow: 15px 15px 40px rgba($color-black02, 0.15);
+
+        @include mq("sp") {
+            height: 100%;
+            object-fit: cover;   
+        }
+    }
+}
+
+.ledVision-feature {
+    background-color: $color-black01;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 768px;
+        height: 790px;
+        position: absolute;
+        top: 160px;
+        right: -88px;
+        background: linear-gradient(45deg, $color-blue03 0%, $color-blue02 100%);
+        filter: blur(475px);
+        opacity: .5;
+    }
+
+    @include mq("sp") {
+        text-align: center;
+
+        &::before {
+            width: 535px;
+            height: 550px; 
+            right: -270px;
+        }
+    }
+
+    &__enTitle {
+        color: $pureWhite;
+
+        &::after {
+            background-color: $pureWhite;
+        }
+
+        @include mq("sp") {
+            margin-top: 140px;
+        }
+    }
+
+    &__inner {
+        padding: 150px 0;
+
+        @include mq("sp") {
+            padding: 24px 0 80px 0;
+        }
+    }
+
+    &__head {
+        display: inline-block;
+        background: -webkit-linear-gradient(20deg, $base-color 0%, $pureWhite 50%, $pureWhite 100%);
+        background-clip: text;
+        font-size: 40px;
+        font-weight: normal;
+        letter-spacing: .135em;
+
+        @include mq("sp") {
+            font-size: 32px;
+            letter-spacing: .135em;
+            background: -webkit-linear-gradient(20deg, $pureWhite 0%, $pureWhite 50%, $pureWhite 100%);
+            background-clip: text;
+        }
+    }
+
+    &__items {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 34px 0;
+
+        @include mq("sp") {
+            display: block;
+            width: 100%;
+            max-width: 330px;
+            margin: 35px auto 0;
+        }
+    }
+
+    &__item {
+        width: 31.2%;
+        height: auto;
+        min-height: 375px;
+        padding: 60px 30px 30px 30px;
+        border: 1px solid rgba($pureWhite, .1);
+        border-radius: 11px;
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(-45deg, rgba($pureWhite, 1) 0%, rgba($color-black01, .4) 100%);
+            opacity: .1;
+        }
+
+        @include mq("sp") {
+            width: 100%;
+            min-height: 0;
+            padding: 20px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &:not(:first-child) {
+                margin-top: 10px;
+            }
+        }
+    }
+    &__itemImgArea {
+        width: 71px;
+        height: 71px;
+        margin: 0 auto;
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba($pureWhite, .4);
+            filter: blur(40px);
+            border-radius: 50%;
+        }
+
+        @include mq("sp") {
+            width: 15.7%;
+            width: 52px;
+            height: 52px;
+            margin: 0;
+        }
+    }
+    &__itemImg {
+        width: 100%;
+        height: auto;
+    }
+
+    &__itemTextArea {
+
+        @include mq("sp") {
+            width: 75%;
+            text-align: left;
+        }
+    }
+    &__itemTitle {
+        margin-top: 30px;
+        font-size: 20px;
+        font-weight: normal;
+        text-align: center;
+        background: -webkit-linear-gradient(330deg, $color-gray03 0%, $pureWhite 70%, $pureWhite 100%); /* 背景色にグラデーションを指定 初期値を設定 */
+        background-clip: text;
+        
+        @include mq("sp") {
+            margin-top: 0;
+            font-size: 18px;
+            text-align: left;
+            background: -webkit-linear-gradient(330deg, $color-gray03 0%, $pureWhite 40%, $pureWhite 100%); /* 背景色にグラデーションを指定 初期値を設定 */
+            background-clip: text;
+        }
+    }
+    &__itemText {
+        margin-top: 14px;
+        color: $color-gray02;
+        font-size: 14px;
+        line-height: 1.9;
+
+        @include mq("sp") {
+            margin-top: 6px;
+            font-size: 12px;
+        }
+    }
+}
+
+.PixelPitch {
+ 
+    &-inner {
+        padding: 150px 0;
+
+        @media (max-width: 1100px) {
+            padding: 30px 0 80px 0;
+        }
+    }
+
+    &__enTitle {
+
+        @include mq("sp") {
+            margin-top: 140px;
+        }
+    }
+
+    &__head {
+        font-size: 40px;
+        font-weight: normal;
+
+        @media (max-width: 1100px) {
+            font-size: 32px;
+            text-align: center;
+        }
+    }
+
+    &-top {
+        margin-top: 50px;
+        padding: 60px;
+        border: 1px solid $base-color;
+        border-radius: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mq("sp") {
+            display: block;
+            width: 100%;
+            max-width: 375px;
+            margin: 35px auto 0;
+            padding: 25px;
+        }
+        
+        &__head {
+            font-size: 22px;
+            line-height: 1.5;
+
+            @include mq("sp") {
+                text-align: center;
+                font-size: 18px;
+            }
+        }
+
+        &__text {
+            margin-top: 24px;
+            font-size: 15px;
+
+            @include mq("sp") {
+                margin-top: 10px;
+                font-size: 13px;
+            }
+        }
+
+        &__centerLine {
+            width: 1px;
+            height: 185px;
+            background-color: $color-gray04;
+
+            @include mq("sp") {
+                width: 280px;
+                height: 1px;
+                margin: 20px auto 0; 
+            }
+        }
+
+        &__imgHead {
+            font-size: 12px;
+            font-weight: 500;
+        }
+        &__img {
+            margin-top: 36px;
+            width: 100%;
+        }
+    }
+    &-topTextArea {
+        width: 45%;
+
+        @include mq("sp") {
+            width: 100%;
+        }
+    }
+
+    &-topImgArea {
+        width: 39%;
+
+        @include mq("sp") {
+            width: 100%;
+            margin-top: 25px;
+            text-align: center;
+        }
+    }
+}
+
+.ledVisionPoints {
+    background-color: $color-gray05;
+    padding-top: 140px;
+
+    &__enTitle {
+
+        @media (max-width: 1100px) {
+            margin-top: 0px;
+        }
+    }
+
+    &-inner {
+        padding: 150px 0 120px 0;
+
+        @media (max-width: 1100px) {
+            padding: 24px 0 60px 0;
+        }
+    }
+
+    &__head {
+        font-size: 40px;
+        font-weight: normal;
+
+        @media (max-width: 1100px) {
+            text-align: center;
+        }
+        @include mq("sp") {
+            font-size: 32px;
+        }
+    }
+
+    &-items {
+        margin-top: 35px;
+
+        @include mq("sp") {
+            margin-top: 0;
+        }
+    }
+
+    &-item {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: relative;
+        padding: 80px 0;
+
+        @include mq("sp") {
+            display: block;
+            padding: 30px 0 60px 0;
+
+            &:nth-child(2),
+            &:nth-child(3) {
+                padding: 50px 0 60px 0;
+            }
+        }
+
+        &:not(:first-child) {
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin: 0 calc(50% - 50vw);
+                width: 100vw;
+                height: 100%;
+            }
+        }
+        &:nth-child(2) {
+
+            &::before {
+                background-color: $color-gray06;
+            }
+        }
+        &:nth-child(3) {
+            
+            &::before {
+                background-color: $color-gray07;
+            }
+        }
+        
+        &__headArea {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            position: relative;
+            z-index: 2;
+
+            @include mq("sp") {
+                justify-content: center;
+            }
+        }
+
+        &__head {
+            font-size: 24px;
+            font-weight: 500;
+
+            @include mq("sp") {
+                font-size: 21px;
+            }
+            
+            &--num {
+                font-family: $Rajdhani;
+                font-size: 29px;
+                font-weight: 600;
+                @include mq("sp") {
+                    font-size: 27px;
+                }
+            }
+        }
+
+        &--right {
+            width: 64%;
+            position: relative;
+            z-index: 2;
+
+            @include mq("sp") {
+                width: 100%;
+                max-width: 330px;
+                margin: 10px auto 0;
+            }
+        }
+
+    }
+
+    &-item01 {
+
+        &__text {
+            font-size: 15px;
+
+            @include mq("sp") {
+                font-size: 13px;
+            }
+        }
+
+        &__desc {
+            display: inline-block;
+            min-width: 360px;
+            margin-top: 14px;
+            padding: 10px 8px;
+            border: 1px solid $base-color;
+            border-radius: 8px;
+
+            @include mq("sp") {
+                min-width: 0;
+                width: 100%;
+                max-width: 330px;
+                margin: 10px auto;
+            }
+        }
+        &__descText {
+            font-size: 15px;
+            font-weight: 500;
+
+            @include mq("sp") {
+                font-size: 13px;
+            }
+        }
+
+        &__img {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 660px;
+        }
+    }
+
+    &-item02 {
+
+        &--right {
+
+            @include mq("sp") {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                padding-top: 10px;
+            }
+        }
+
+        &__ul {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include mq("sp") {
+                display: block;
+                width: 81%;
+            }
+        }
+
+        &__list {
+            width: 21%;
+
+            @include mq("sp") {
+                width: 100%;
+
+                &:not(:first-child) {
+                    margin-top: 16px;
+                }
+            }
+        }
+        &__listImg {
+            width: 100%;
+            height: 117px;
+            object-fit: cover;
+            border-radius: 4px;
+
+            @include mq("sp") {
+                height: 178px;
+            }
+        }
+        &__listTitleArea {
+            height: auto;
+            min-height: 35px;
+            margin-top: 10px;
+            display: grid;
+            place-items: center;
+
+            @include mq("sp") {
+                display: block;
+                min-height: 0;
+            }
+        }
+        &__listTitle {
+            font-size: 13px;
+            line-height: 1.34;
+            font-weight: 500;
+            text-align: center;
+
+            @include mq("sp") {
+                font-size: 12px;
+                text-align: left;
+            }
+        }
+        &__listLuminance {
+            margin-top: 5px;
+            font-family: $Rajdhani;
+            font-size: 13px;
+            font-weight: 600;
+            color: $accent-color;
+            text-align: center;
+
+            @include mq("sp") {
+                margin-top: 0;
+                font-size: 12px;
+                text-align: left;
+            }
+        }
+
+        &__level {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include mq("sp") {
+                display: block;
+            }
+
+            &--dark,
+            &--light {
+                width: 38px;
+                height: 38px;
+                text-align: center;
+                line-height: 38px;
+                border-radius: 50%;
+                font-size: 13px;
+                font-weight: 500;
+            }
+            &--dark {
+                color: $pureWhite;
+                background-color: $base-color;
+
+                @include mq("sp") {
+                    margin-bottom: 10px;
+                }
+            }
+            
+            &--arrow {
+                width: 85%;
+                height: 5px;
+
+                @include mq("sp") {
+                    width: 5px;
+                    height: 846px;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            
+            &--light {
+                color: $base-color;
+                border: 1px solid $base-color;
+
+                @include mq("sp") {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    &-item03 {
+
+        &__ul {
+            width: 100%;
+
+            @include mq("sp") {
+                max-width: 330px;
+            }
+        }
+
+        &__list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 40px;
+            border-bottom: 1px solid $color-gray08;
+
+            @include mq("sp") {
+                display: block;
+                padding-bottom: 20px;
+            }
+
+            &:not(:first-child) {
+                padding-top: 40px;
+            }
+        }
+        &__listImgArea {
+            width: 22%;
+            margin: 0;
+
+            @include mq("sp") {
+                width: 100%;
+            }
+        }
+        &__listImg {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+
+            @include mq("sp") {
+                height: 240px;
+                object-fit: cover;
+            }
+        }
+
+        &__listTextArea {
+            width: 73%;
+
+            @include mq("sp") {
+                width: 100%;
+            }
+        }
+        &__listHead {
+            font-size: 18px;
+            font-weight: bold;
+            
+            @include mq("sp") {
+                margin-top: 14px;
+                font-size: 16px;
+            }
+        }
+        &__listText {
+            font-size: 13px;
+            line-height: 1.6;
+
+            @include mq("sp") {
+                margin-top: 6px;
+                font-size: 12px;
+            }
+        }
+    }
+
+}

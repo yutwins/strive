@@ -1,3 +1,6 @@
+@use "../globals/color" as *;
+@use "../globals/variables" as *;
+
 $layout-width-inner: 1080px;
 
 // ブレイクポイント
@@ -14,10 +17,192 @@ $breakpoints: (
 }
 
 .inner {
-    width: min(100% - 2rem, 1200px);
+    width: min(100% - 2rem, 1025px);
     margin-inline: auto;
+}
+
+.pc-only {
+    display: block;
+
+    @include mq("sp") {
+        display: none;
+    }
+}
+.sp-only {
+    display: none;
+
+    @include mq("sp") {
+        display: block;
+    }
+}
+
+.section {
+    position: relative;
+}
+
+.section__enTitle {
+    font-family: $Rajdhani;
+    letter-spacing: .7em;
+    font-size: 14px;
+    font-weight: 500;
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: 5;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 46px;
+        height: 1px;
+        position: absolute;
+        top: 140%;
+        left: 0;
+        z-index: 5;
+        background-color: $base-color; //初期値
+    }
+
+    &--right {
+        top: 160px;
+        right: 60px;
+        right: 0;
+
+        @media (max-width: 1230px) {
+            right: -60px;
+        }
+        @media (max-width: 1100px) {
+            top: initial;
+            right: initial;    
+        }
+        
+        @include mq("sp") {
+            top: initial;
+            right: initial;
+        }
+    }
+
+
+
+    @media (max-width: 1100px) {
+        transform: rotate(0deg);
+        position: relative;
+        text-align: center;
+        margin-top: 90px;
+
+        &::after {
+            width: 1px;
+            height: 36px;
+            top: -61px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.gradation-text {
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; /* 切り抜いた部分は背景を表示 */
+    // -webkit-background-clip: text; /* テキストで切り抜く */
+    background: -webkit-linear-gradient(20deg, $color-blue01 0%, $base-color 50%, $base-color 100%); /* 背景色にグラデーションを指定 初期値を設定 */
+    background-clip: text;
+}
+
+.btn {
+    display: grid;
+    place-items: center;
+    background-color: $accent-color;
+
+    &__text {
+        font-weight: bold;
+        color: $pureWhite;
+    }
+}
+
+// 下層ページのトップ
+.page-top {
+    height: 650px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
     
-    // width: 1200px;
-    // max-width: 100%;
-    // margin: 0 auto;
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: url(../../images/strive-page-top-bg.png) no-repeat center center / cover;
+    }
+    
+    @include mq("sp") {
+        height: 350px;
+        
+        &::before {
+            width: 231px;
+            height: 231px;
+            bottom: -50px;
+            right: -50px;
+            background: none;
+            background: linear-gradient(45deg, $color-blue03 0%, $color-blue02 100%);
+            filter: blur(115px);
+        }
+    }
+
+    &__inner {
+
+    }
+
+    &__titleArea {
+        width: 320px;
+        text-align: right;
+
+        @include mq("sp") {
+            text-align: left;
+        }
+    }
+    &__title {
+        font-family: $Rajdhani;
+        font-size: 70px;
+        line-height: 1.2;
+        font-weight: 500;
+        letter-spacing: .48em;
+        background: -webkit-linear-gradient(1800deg, $color-gray03 0%, $pureWhite 80%, $pureWhite 100%); /* 背景色にグラデーションを指定 初期値を設定 */
+        background-clip: text;
+        
+        @include mq("sp") {
+            font-size: 43px;
+            letter-spacing: .4em;
+        }
+    }
+    &__subTitle {
+        font-size: 20px;
+        font-weight: normal;
+        letter-spacing: .55em;
+        color: $pureWhite;
+
+        @include mq("sp") {
+            font-size: 15px;
+        }
+    }
+}
+
+.page-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.page-contents {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background-color: $pureWhite;
+    border-radius: 45px 45px 0 0;
+
+    @include mq("sp") {
+        top: -32px;
+    }
 }

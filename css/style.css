@@ -10,18 +10,21 @@ html,
 body {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  background-color: #fff;
+  background-color: #040D13;
+  color: #383940;
 }
 
 img {
   max-width: 100%;
   height: auto;
+  vertical-align: bottom;
 }
 
 ul,
@@ -51,12 +54,1951 @@ p {
 }
 
 .inner {
-  width: min(100% - 2rem, 1200px);
+  width: min(100% - 2rem, 1025px);
   margin-inline: auto;
 }
 
+.pc-only {
+  display: block;
+}
+@media (max-width: 767px) {
+  .pc-only {
+    display: none;
+  }
+}
+
+.sp-only {
+  display: none;
+}
+@media (max-width: 767px) {
+  .sp-only {
+    display: block;
+  }
+}
+
+.section {
+  position: relative;
+}
+
+.section__enTitle {
+  font-family: "Rajdhani", sans-serif;
+  letter-spacing: 0.7em;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  z-index: 5;
+}
+.section__enTitle::after {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 1px;
+  position: absolute;
+  top: 140%;
+  left: 0;
+  z-index: 5;
+  background-color: #383940;
+}
+.section__enTitle--right {
+  top: 160px;
+  right: 60px;
+  right: 0;
+}
+@media (max-width: 1230px) {
+  .section__enTitle--right {
+    right: -60px;
+  }
+}
+@media (max-width: 1100px) {
+  .section__enTitle--right {
+    top: initial;
+    right: initial;
+  }
+}
+@media (max-width: 767px) {
+  .section__enTitle--right {
+    top: initial;
+    right: initial;
+  }
+}
+@media (max-width: 1100px) {
+  .section__enTitle {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    position: relative;
+    text-align: center;
+    margin-top: 90px;
+  }
+  .section__enTitle::after {
+    width: 1px;
+    height: 36px;
+    top: -61px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+.gradation-text {
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; /* 切り抜いた部分は背景を表示 */
+  background: -webkit-linear-gradient(20deg, #4F60FF 0%, #383940 50%, #383940 100%); /* 背景色にグラデーションを指定 初期値を設定 */
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+.btn {
+  display: grid;
+  place-items: center;
+  background-color: #2746ED;
+}
+.btn__text {
+  font-weight: bold;
+  color: #fff;
+}
+
+.page-top {
+  height: 650px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.page-top::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url(../../images/strive-page-top-bg.png) no-repeat center center/cover;
+}
+@media (max-width: 767px) {
+  .page-top {
+    height: 350px;
+  }
+  .page-top::before {
+    width: 231px;
+    height: 231px;
+    bottom: -50px;
+    right: -50px;
+    background: none;
+    background: -webkit-linear-gradient(45deg, #801CFF 0%, #24F2FF 100%);
+    background: linear-gradient(45deg, #801CFF 0%, #24F2FF 100%);
+    -webkit-filter: blur(115px);
+            filter: blur(115px);
+  }
+}
+.page-top__titleArea {
+  width: 320px;
+  text-align: right;
+}
+@media (max-width: 767px) {
+  .page-top__titleArea {
+    text-align: left;
+  }
+}
+.page-top__title {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 70px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.48em;
+  background: -webkit-linear-gradient(1800deg, #606D76 0%, #fff 80%, #fff 100%); /* 背景色にグラデーションを指定 初期値を設定 */
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+@media (max-width: 767px) {
+  .page-top__title {
+    font-size: 43px;
+    letter-spacing: 0.4em;
+  }
+}
+.page-top__subTitle {
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 0.55em;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .page-top__subTitle {
+    font-size: 15px;
+  }
+}
+
+.page-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.page-contents {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  background-color: #fff;
+  border-radius: 45px 45px 0 0;
+}
+@media (max-width: 767px) {
+  .page-contents {
+    top: -32px;
+  }
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.header-inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 3.6% 0;
+}
+@media (max-width: 767px) {
+  .header-inner {
+    padding: 20px 15px;
+  }
+}
+.header-logoArea {
+  width: 92px;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .header-logoArea {
+    width: 61px;
+  }
+}
+.header-logo {
+  display: block;
+  width: 100%;
+}
+.header-logo__img {
+  width: 100%;
+  height: auto;
+}
+.header-navArea {
+  padding: 6px 7px;
+  background-color: #fff;
+  border-radius: 42px;
+}
+@media (max-width: 767px) {
+  .header-navArea {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 72px;
+    border-radius: 0;
+    display: grid;
+    place-items: center;
+  }
+}
+.header-ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-li__item {
+  margin-left: 32px;
+  font-size: 14px;
+  font-weight: bold;
+}
+@media (min-width: 768px) and (max-width: 1079px) {
+  .header-li__item {
+    margin-left: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .header-li__item {
+    margin-left: 16px;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+}
+.header-li__btn {
+  width: 170px;
+  height: 48px;
+  margin-left: 30px;
+  border-radius: 42px;
+}
+@media (min-width: 768px) and (max-width: 1079px) {
+  .header-li__btn {
+    width: 154px;
+    height: 42px;
+  }
+}
+@media (max-width: 767px) {
+  .header-li__btn {
+    width: 134px;
+    height: 46px;
+  }
+}
+.header-li__btnText {
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  .header-li__btnText {
+    font-size: 11px;
+  }
+}
+
+.footer {
+  position: relative;
+  z-index: 2;
+  background-color: #040D13;
+}
+@media (max-width: 767px) {
+  .footer {
+    margin-bottom: 80px;
+  }
+}
+.footer-inner {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 75px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .footer-inner {
+    width: 100%;
+    display: block;
+    padding-top: 80px;
+  }
+}
+.footer-logoArea {
+  width: 150px;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .footer-logoArea {
+    width: 102px;
+    margin: 0 auto;
+  }
+}
+.footer-logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.footer-logo__img {
+  width: 100%;
+  height: auto;
+}
+.footer-textArea {
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .footer-textArea {
+    margin: 30px auto 0;
+  }
+}
+.footer-companyName {
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .footer-companyName {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+.footer-companyAddress {
+  font-size: 12px;
+}
+@media (max-width: 767px) {
+  .footer-companyAddress {
+    margin-top: 8px;
+    text-align: center;
+  }
+}
+.footer-companyContact {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .footer-companyContact {
+    margin-top: 8px;
+    text-align: center;
+  }
+}
+.footer-nav {
+  margin-top: 30px;
+}
+.footer-ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 32px;
+}
+@media (max-width: 767px) {
+  .footer-ul {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 24px;
+  }
+}
+.footer-list__item {
+  font-size: 13px;
+  font-weight: 500;
+}
+.footer .copyright {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 10px;
+  color: #666666;
+  letter-spacing: 0.275em;
+}
+@media (max-width: 767px) {
+  .footer .copyright {
+    padding-top: 80px;
+  }
+}
+
+.hero {
+  position: relative;
+}
+.hero::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1067px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/strive-hero-bg-gradation.png) no-repeat center center/cover;
+}
+.hero-textArea {
+  width: 81.2%;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-top: 240px;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 767px) {
+  .hero-textArea {
+    width: 87%;
+    max-width: 400px;
+    padding-top: 140px;
+  }
+}
+.hero-textArea__upper {
+  padding-left: 20px;
+}
+@media (max-width: 767px) {
+  .hero-textArea__upper {
+    padding-left: 0;
+  }
+}
+.hero-textArea__bottom {
+  margin-top: 12px;
+  text-align: center;
+  padding-left: 80px;
+  position: relative;
+}
+.hero-textArea__bottom::before {
+  content: "";
+  display: block;
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+  height: 75px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url(../images/strive-hero-text-img.png) no-repeat center center/cover;
+}
+@media (max-width: 767px) {
+  .hero-textArea__bottom {
+    text-align: left;
+    padding-left: 0;
+  }
+  .hero-textArea__bottom::before {
+    margin: 0;
+    max-width: 500px;
+    height: 464px;
+    top: 155%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background: url(../images/strive-hero-text-img-sp.png) no-repeat center center/cover;
+  }
+}
+@media (max-width: 450px) {
+  .hero-textArea__bottom {
+    top: 140%;
+  }
+}
+.hero-title {
+  font-size: 80px;
+  font-size: 5vw;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.165em;
+}
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 48px;
+    letter-spacing: 0.1em;
+  }
+}
+@media (max-width: 450px) {
+  .hero-title {
+    font-size: 42px;
+  }
+}
+
+.hero-slider {
+  margin-top: 32px;
+  position: relative;
+  z-index: 3;
+}
+@media (max-width: 767px) {
+  .hero-slider {
+    margin-top: 140px;
+  }
+}
+
+.slider-container {
+  height: 320px;
+}
+
+.slider-item {
+  height: auto;
+  padding: 0 35px;
+}
+.slider-item__img {
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.4);
+          box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.4);
+  border-radius: 19px;
+}
+@media (max-width: 767px) {
+  .slider-item__img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+.slider-item__sp {
+  width: 547px;
+}
+.slider-item01 {
+  width: 320px;
+}
+.slider-item01 .slider-item__img {
+  margin-top: 100px;
+}
+.slider-item02 {
+  width: 380px;
+}
+.slider-item03 {
+  width: 436px;
+}
+.slider-item03 .slider-item__img {
+  margin-top: 60px;
+}
+.slider-item04 {
+  width: 296px;
+}
+.slider-item05 {
+  width: 286px;
+  padding-left: 0;
+}
+.slider-item05 .slider-item__img {
+  margin-top: 200px;
+}
+.slider-item06 {
+  width: 436px;
+}
+.slider-item07 {
+  width: 380px;
+}
+.slider-item07 .slider-item__img {
+  margin-top: 100px;
+}
+.slider-item08 {
+  width: 286px;
+}
+.slider-item08 .slider-item__img {
+  margin-top: 50px;
+}
+
+.mission {
+  position: relative;
+  z-index: 2;
+  margin-top: 90px;
+  background-color: #fff;
+  border-radius: 45px 45px 0 0;
+}
+.mission-nav {
+  width: 100%;
+  height: 72px;
+  display: none;
+  place-items: center;
+}
+@media (max-width: 767px) {
+  .mission-nav {
+    display: grid;
+  }
+}
+.mission-ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4.2%;
+}
+.mission-list__item {
+  font-size: 11px;
+  font-weight: bold;
+}
+.mission-list__btn {
+  width: 134px;
+  height: 46px;
+  border-radius: 28px;
+}
+.mission-list__btnText {
+  font-size: 11px;
+}
+.mission-inner {
+  padding-top: 217px;
+  padding-bottom: 180px;
+}
+@media (max-width: 767px) {
+  .mission-inner {
+    padding-top: 30px;
+    padding-bottom: 100px;
+  }
+}
+.mission__enTitle::after {
+  background-color: #383940;
+}
+.mission__title {
+  font-size: 60px;
+  font-weight: normal;
+}
+@media (max-width: 767px) {
+  .mission__title {
+    text-align: center;
+    font-size: 34px;
+  }
+}
+.mission__title--upper, .mission__title--bottom {
+  color: #4F60FF; /* 非対応のブラウザの為に色を設定 */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; /* 切り抜いた部分は背景を表示 */
+}
+.mission__title--upper {
+  background: -webkit-linear-gradient(20deg, #4F60FF 0%, #383940 50%, #383940 100%); /* 背景色にグラデーションを指定 */
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.mission__title--bottom {
+  background: -webkit-linear-gradient(340deg, #4F60FF 0%, #383940 50%, #383940 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.mission-textArea {
+  max-width: 600px;
+  margin-top: 100px;
+  margin-left: auto;
+}
+@media (max-width: 767px) {
+  .mission-textArea {
+    margin: 35px 0 0 0;
+    padding: 0 4%;
+  }
+}
+.mission__text {
+  font-size: 17px;
+  line-height: 2em;
+}
+@media (max-width: 767px) {
+  .mission__text {
+    font-size: 15px;
+    line-height: 1.85;
+  }
+}
+
+.feature {
+  background-color: #040D13;
+  position: relative;
+}
+.feature::before, .feature::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.feature::before {
+  background: url(../images/strive-feature-bg.png) no-repeat center center/cover;
+  z-index: 2;
+}
+.feature::after {
+  background: url(../images/strive-feature-bg-gradation.png) no-repeat center center/cover;
+}
+@media (max-width: 767px) {
+  .feature::before {
+    background: url(../../images/strive-feature-bg-sp.png) no-repeat center center/cover;
+    width: 100%;
+    height: 360px;
+    top: initial;
+    bottom: 0;
+  }
+  .feature::after {
+    display: none;
+  }
+}
+.feature__enTitle {
+  top: 100px;
+  left: 75px;
+  color: #fff;
+}
+.feature__enTitle::after {
+  background-color: #fff;
+}
+@media (max-width: 767px) {
+  .feature__enTitle {
+    position: relative;
+    top: initial;
+    left: initial;
+    margin-top: 140px;
+  }
+}
+.feature-inner {
+  padding-top: 230px;
+  padding-bottom: 200px;
+}
+@media (max-width: 767px) {
+  .feature-inner {
+    padding-top: 30px;
+    padding-bottom: 320px;
+  }
+}
+.feature-textArea {
+  max-width: 510px;
+  position: relative;
+  z-index: 3;
+}
+@media (max-width: 767px) {
+  .feature-textArea {
+    width: 100%;
+    max-width: 330px;
+    margin: 0 auto;
+  }
+}
+.feature__text--big {
+  font-size: 38px;
+  font-weight: 500;
+  color: #4F60FF; /* 非対応のブラウザの為に色を設定 */
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; /* 切り抜いた部分は背景を表示 */
+  background: -webkit-linear-gradient(20deg, #383940 0%, #fff 50%, #fff 100%); /* 背景色にグラデーションを指定 */
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+@media (max-width: 767px) {
+  .feature__text--big {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+.feature__text--small {
+  margin-top: 30px;
+  font-size: 15px;
+  color: #9E9E9E;
+}
+@media (max-width: 767px) {
+  .feature__text--small {
+    font-size: 13px;
+  }
+}
+
+.product {
+  background-color: #fff;
+}
+@media (max-width: 767px) {
+  .product {
+    padding-top: 50px;
+  }
+}
+.product__enTitle::after {
+  background-color: #383940;
+}
+.product__title {
+  font-size: 40px;
+  font-weight: normal;
+}
+@media (max-width: 767px) {
+  .product__title {
+    text-align: center;
+    font-size: 32px;
+  }
+}
+.product-inner {
+  padding-top: 170px;
+  padding-bottom: 130px;
+}
+@media (max-width: 767px) {
+  .product-inner {
+    padding-top: 0px;
+  }
+}
+.product-items {
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  gap: 50px 0;
+}
+@media (max-width: 767px) {
+  .product-items {
+    display: block;
+    width: 100%;
+    max-width: 375px;
+    margin: 35px auto 0;
+  }
+}
+.product-item {
+  width: 45%;
+}
+@media (max-width: 767px) {
+  .product-item {
+    width: 100%;
+  }
+  .product-item:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+.product-item__imgArea {
+  margin: 0;
+  border-radius: 8px;
+}
+.product-item__img {
+  -webkit-box-shadow: 15px 15px 40px rgba(23, 52, 87, 0.15);
+          box-shadow: 15px 15px 40px rgba(23, 52, 87, 0.15);
+}
+.product-item__subTitle {
+  margin-top: 18px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.35em;
+  color: #2746ED;
+}
+.product-item__title {
+  font-size: 21px;
+  font-weight: normal;
+}
+.product-item__underline {
+  width: 44px;
+  height: 1px;
+  margin-top: 15px;
+  background-color: #2746ED;
+}
+
+.page-about__titleArea {
+  width: 320px;
+}
+@media (max-width: 767px) {
+  .page-about__titleArea {
+    width: 185px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .ledVision__enTitle {
+    margin-top: 120px;
+  }
+}
+.ledVision-inner {
+  padding: 140px 0;
+  position: relative;
+}
+@media (max-width: 1100px) {
+  .ledVision-inner {
+    padding: 24px 0 80px 0;
+  }
+}
+.ledVision-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .ledVision-container {
+    width: 100%;
+    display: block;
+  }
+}
+.ledVision-textArea {
+  width: 45.4%;
+}
+@media (max-width: 767px) {
+  .ledVision-textArea {
+    width: 100%;
+    max-width: 330px;
+    margin: 0 auto;
+  }
+}
+.ledVision__head {
+  font-size: 40px;
+  font-weight: normal;
+}
+@media (max-width: 767px) {
+  .ledVision__head {
+    font-size: 32px;
+    text-align: center;
+  }
+}
+.ledVision__text {
+  margin-top: 40px;
+  font-size: 15px;
+  line-height: 1.9;
+}
+@media (max-width: 767px) {
+  .ledVision__text {
+    margin-top: 24px;
+    font-size: 13px;
+  }
+}
+.ledVision-imgArea {
+  width: 48.4%;
+  border-radius: 8px;
+}
+@media (max-width: 767px) {
+  .ledVision-imgArea {
+    width: 100%;
+    height: 207px;
+    max-width: 330px;
+    margin: 20px auto 0;
+  }
+}
+.ledVision__img {
+  -webkit-box-shadow: 15px 15px 40px rgba(23, 52, 87, 0.15);
+          box-shadow: 15px 15px 40px rgba(23, 52, 87, 0.15);
+}
+@media (max-width: 767px) {
+  .ledVision__img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.ledVision-feature {
+  background-color: #040D13;
+  position: relative;
+  overflow: hidden;
+}
+.ledVision-feature::before {
+  content: "";
+  display: block;
+  width: 768px;
+  height: 790px;
+  position: absolute;
+  top: 160px;
+  right: -88px;
+  background: -webkit-linear-gradient(45deg, #801CFF 0%, #24F2FF 100%);
+  background: linear-gradient(45deg, #801CFF 0%, #24F2FF 100%);
+  -webkit-filter: blur(475px);
+          filter: blur(475px);
+  opacity: 0.5;
+}
+@media (max-width: 767px) {
+  .ledVision-feature {
+    text-align: center;
+  }
+  .ledVision-feature::before {
+    width: 535px;
+    height: 550px;
+    right: -270px;
+  }
+}
+.ledVision-feature__enTitle {
+  color: #fff;
+}
+.ledVision-feature__enTitle::after {
+  background-color: #fff;
+}
+@media (max-width: 767px) {
+  .ledVision-feature__enTitle {
+    margin-top: 140px;
+  }
+}
+.ledVision-feature__inner {
+  padding: 150px 0;
+}
+@media (max-width: 767px) {
+  .ledVision-feature__inner {
+    padding: 24px 0 80px 0;
+  }
+}
+.ledVision-feature__head {
+  display: inline-block;
+  background: -webkit-linear-gradient(20deg, #383940 0%, #fff 50%, #fff 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: 0.135em;
+}
+@media (max-width: 767px) {
+  .ledVision-feature__head {
+    font-size: 32px;
+    letter-spacing: 0.135em;
+    background: -webkit-linear-gradient(20deg, #fff 0%, #fff 50%, #fff 100%);
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+}
+.ledVision-feature__items {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  gap: 34px 0;
+}
+@media (max-width: 767px) {
+  .ledVision-feature__items {
+    display: block;
+    width: 100%;
+    max-width: 330px;
+    margin: 35px auto 0;
+  }
+}
+.ledVision-feature__item {
+  width: 31.2%;
+  height: auto;
+  min-height: 375px;
+  padding: 60px 30px 30px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 11px;
+  position: relative;
+  overflow: hidden;
+}
+.ledVision-feature__item::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-linear-gradient(135deg, white 0%, rgba(4, 13, 19, 0.4) 100%);
+  background: linear-gradient(-45deg, white 0%, rgba(4, 13, 19, 0.4) 100%);
+  opacity: 0.1;
+}
+@media (max-width: 767px) {
+  .ledVision-feature__item {
+    width: 100%;
+    min-height: 0;
+    padding: 20px 25px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .ledVision-feature__item:not(:first-child) {
+    margin-top: 10px;
+  }
+}
+.ledVision-feature__itemImgArea {
+  width: 71px;
+  height: 71px;
+  margin: 0 auto;
+  position: relative;
+}
+.ledVision-feature__itemImgArea::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
+  border-radius: 50%;
+}
+@media (max-width: 767px) {
+  .ledVision-feature__itemImgArea {
+    width: 15.7%;
+    width: 52px;
+    height: 52px;
+    margin: 0;
+  }
+}
+.ledVision-feature__itemImg {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .ledVision-feature__itemTextArea {
+    width: 75%;
+    text-align: left;
+  }
+}
+.ledVision-feature__itemTitle {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  background: -webkit-linear-gradient(330deg, #606D76 0%, #fff 70%, #fff 100%); /* 背景色にグラデーションを指定 初期値を設定 */
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+@media (max-width: 767px) {
+  .ledVision-feature__itemTitle {
+    margin-top: 0;
+    font-size: 18px;
+    text-align: left;
+    background: -webkit-linear-gradient(330deg, #606D76 0%, #fff 40%, #fff 100%); /* 背景色にグラデーションを指定 初期値を設定 */
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+}
+.ledVision-feature__itemText {
+  margin-top: 14px;
+  color: #9E9E9E;
+  font-size: 14px;
+  line-height: 1.9;
+}
+@media (max-width: 767px) {
+  .ledVision-feature__itemText {
+    margin-top: 6px;
+    font-size: 12px;
+  }
+}
+
+.PixelPitch-inner {
+  padding: 150px 0;
+}
+@media (max-width: 1100px) {
+  .PixelPitch-inner {
+    padding: 30px 0 80px 0;
+  }
+}
+@media (max-width: 767px) {
+  .PixelPitch__enTitle {
+    margin-top: 140px;
+  }
+}
+.PixelPitch__head {
+  font-size: 40px;
+  font-weight: normal;
+}
+@media (max-width: 1100px) {
+  .PixelPitch__head {
+    font-size: 32px;
+    text-align: center;
+  }
+}
+.PixelPitch-top {
+  margin-top: 50px;
+  padding: 60px;
+  border: 1px solid #383940;
+  border-radius: 11px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .PixelPitch-top {
+    display: block;
+    width: 100%;
+    max-width: 375px;
+    margin: 35px auto 0;
+    padding: 25px;
+  }
+}
+.PixelPitch-top__head {
+  font-size: 22px;
+  line-height: 1.5;
+}
+@media (max-width: 767px) {
+  .PixelPitch-top__head {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+.PixelPitch-top__text {
+  margin-top: 24px;
+  font-size: 15px;
+}
+@media (max-width: 767px) {
+  .PixelPitch-top__text {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+}
+.PixelPitch-top__centerLine {
+  width: 1px;
+  height: 185px;
+  background-color: #CFCFCF;
+}
+@media (max-width: 767px) {
+  .PixelPitch-top__centerLine {
+    width: 280px;
+    height: 1px;
+    margin: 20px auto 0;
+  }
+}
+.PixelPitch-top__imgHead {
+  font-size: 12px;
+  font-weight: 500;
+}
+.PixelPitch-top__img {
+  margin-top: 36px;
+  width: 100%;
+}
+.PixelPitch-topTextArea {
+  width: 45%;
+}
+@media (max-width: 767px) {
+  .PixelPitch-topTextArea {
+    width: 100%;
+  }
+}
+.PixelPitch-topImgArea {
+  width: 39%;
+}
+@media (max-width: 767px) {
+  .PixelPitch-topImgArea {
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+  }
+}
+
+.ledVisionPoints {
+  background-color: #F8F8F8;
+  padding-top: 140px;
+}
+@media (max-width: 1100px) {
+  .ledVisionPoints__enTitle {
+    margin-top: 0px;
+  }
+}
+.ledVisionPoints-inner {
+  padding: 150px 0 120px 0;
+}
+@media (max-width: 1100px) {
+  .ledVisionPoints-inner {
+    padding: 24px 0 60px 0;
+  }
+}
+.ledVisionPoints__head {
+  font-size: 40px;
+  font-weight: normal;
+}
+@media (max-width: 1100px) {
+  .ledVisionPoints__head {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .ledVisionPoints__head {
+    font-size: 32px;
+  }
+}
+.ledVisionPoints-items {
+  margin-top: 35px;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-items {
+    margin-top: 0;
+  }
+}
+.ledVisionPoints-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  padding: 80px 0;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item {
+    display: block;
+    padding: 30px 0 60px 0;
+  }
+  .ledVisionPoints-item:nth-child(2), .ledVisionPoints-item:nth-child(3) {
+    padding: 50px 0 60px 0;
+  }
+}
+.ledVisionPoints-item:not(:first-child)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+  height: 100%;
+}
+.ledVisionPoints-item:nth-child(2)::before {
+  background-color: #FDFDFD;
+}
+.ledVisionPoints-item:nth-child(3)::before {
+  background-color: #FAFAFA;
+}
+.ledVisionPoints-item__headArea {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item__headArea {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.ledVisionPoints-item__head {
+  font-size: 24px;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item__head {
+    font-size: 21px;
+  }
+}
+.ledVisionPoints-item__head--num {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 29px;
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item__head--num {
+    font-size: 27px;
+  }
+}
+.ledVisionPoints-item--right {
+  width: 64%;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item--right {
+    width: 100%;
+    max-width: 330px;
+    margin: 10px auto 0;
+  }
+}
+.ledVisionPoints-item01__text {
+  font-size: 15px;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item01__text {
+    font-size: 13px;
+  }
+}
+.ledVisionPoints-item01__desc {
+  display: inline-block;
+  min-width: 360px;
+  margin-top: 14px;
+  padding: 10px 8px;
+  border: 1px solid #383940;
+  border-radius: 8px;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item01__desc {
+    min-width: 0;
+    width: 100%;
+    max-width: 330px;
+    margin: 10px auto;
+  }
+}
+.ledVisionPoints-item01__descText {
+  font-size: 15px;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item01__descText {
+    font-size: 13px;
+  }
+}
+.ledVisionPoints-item01__img {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 660px;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item02--right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 10px;
+  }
+}
+.ledVisionPoints-item02__ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item02__ul {
+    display: block;
+    width: 81%;
+  }
+}
+.ledVisionPoints-item02__list {
+  width: 21%;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item02__list {
+    width: 100%;
+  }
+  .ledVisionPoints-item02__list:not(:first-child) {
+    margin-top: 16px;
+  }
+}
+.ledVisionPoints-item02__listImg {
+  width: 100%;
+  height: 117px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item02__listImg {
+    height: 178px;
+  }
+}
+.ledVisionPoints-item02__listTitleArea {
+  height: auto;
+  min-height: 35px;
+  margin-top: 10px;
+  display: grid;
+  place-items: center;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item02__listTitleArea {
+    display: block;
+    min-height: 0;
+  }
+}
+.ledVisionPoints-item02__listTitle {
+  font-size: 13px;
+  line-height: 1.34;
+  font-weight: 500;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item02__listTitle {
+    font-size: 12px;
+    text-align: left;
+  }
+}
+.ledVisionPoints-item02__listLuminance {
+  margin-top: 5px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #2746ED;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item02__listLuminance {
+    margin-top: 0;
+    font-size: 12px;
+    text-align: left;
+  }
+}
+.ledVisionPoints-item02__level {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item02__level {
+    display: block;
+  }
+}
+.ledVisionPoints-item02__level--dark, .ledVisionPoints-item02__level--light {
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 500;
+}
+.ledVisionPoints-item02__level--dark {
+  color: #fff;
+  background-color: #383940;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item02__level--dark {
+    margin-bottom: 10px;
+  }
+}
+.ledVisionPoints-item02__level--arrow {
+  width: 85%;
+  height: 5px;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item02__level--arrow {
+    width: 5px;
+    height: 846px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.ledVisionPoints-item02__level--light {
+  color: #383940;
+  border: 1px solid #383940;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item02__level--light {
+    margin-top: 10px;
+  }
+}
+.ledVisionPoints-item03__ul {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item03__ul {
+    max-width: 330px;
+  }
+}
+.ledVisionPoints-item03__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #D7D7D7;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item03__list {
+    display: block;
+    padding-bottom: 20px;
+  }
+}
+.ledVisionPoints-item03__list:not(:first-child) {
+  padding-top: 40px;
+}
+.ledVisionPoints-item03__listImgArea {
+  width: 22%;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item03__listImgArea {
+    width: 100%;
+  }
+}
+.ledVisionPoints-item03__listImg {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item03__listImg {
+    height: 240px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.ledVisionPoints-item03__listTextArea {
+  width: 73%;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item03__listTextArea {
+    width: 100%;
+  }
+}
+.ledVisionPoints-item03__listHead {
+  font-size: 18px;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item03__listHead {
+    margin-top: 14px;
+    font-size: 16px;
+  }
+}
+.ledVisionPoints-item03__listText {
+  font-size: 13px;
+  line-height: 1.6;
+}
+@media (max-width: 767px) {
+  .ledVisionPoints-item03__listText {
+    margin-top: 6px;
+    font-size: 12px;
+  }
+}
+
+.pageProduct__titleArea {
+  width: 470px;
+}
+.pageProduct__enTitle {
+  margin-top: 120px;
+}
+.pageProduct-inner {
+  padding-top: 140px;
+  padding-bottom: 150px;
+}
+@media (max-width: 767px) {
+  .pageProduct-inner {
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
+}
+.pageProduct-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.pageProduct-item:not(:first-child) {
+  margin-top: 140px;
+}
+@media (max-width: 767px) {
+  .pageProduct-item:not(:first-child) {
+    margin-top: 60px;
+  }
+}
+.pageProduct-item:not(:first-child) .pageProduct-dlArea {
+  margin-top: 40px;
+}
+@media (max-width: 767px) {
+  .pageProduct-item {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+.pageProduct-item__head {
+  font-weight: bold;
+  color: #2746ED;
+}
+@media (max-width: 767px) {
+  .pageProduct-item__head {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+.pageProduct-item__title {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  text-shadow: 30px 8px 40px rgba(0, 0, 0, 0.45);
+}
+@media (max-width: 767px) {
+  .pageProduct-item__title {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+.pageProduct-item__imgArea {
+  margin: 20px 0 0 0;
+}
+.pageProduct-item__img {
+  width: 100%;
+  height: auto;
+}
+.pageProduct-item__text {
+  margin-top: 24px;
+  font-size: 15px;
+  line-height: 1.9;
+}
+@media (max-width: 767px) {
+  .pageProduct-item__text {
+    margin-top: 18px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 767px) {
+  .pageProduct-nav {
+    display: none;
+  }
+}
+.pageProduct-ul {
+  width: 112px;
+}
+.pageProduct-list {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #D7D7D7;
+  text-shadow: 30px 8px 40px rgba(0, 0, 0, 0.45);
+}
+.pageProduct-list:not(:first-child) {
+  margin-top: 16px;
+}
+.pageProduct-list.active {
+  color: #383940;
+  position: relative;
+}
+.pageProduct-list.active::before {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  background-color: #2746ED;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.pageProduct-contents {
+  width: 68%;
+}
+@media (max-width: 767px) {
+  .pageProduct-contents {
+    width: 100%;
+  }
+}
+.pageProduct-dlArea {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .pageProduct-dlArea {
+    margin-top: 24px;
+  }
+}
+.pageProduct-dl {
+  width: 46.7%;
+  margin: 0;
+}
+.pageProduct-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 0;
+  border-bottom: 1px solid #E1E1E1;
+}
+@media (max-width: 767px) {
+  .pageProduct-row {
+    display: block;
+  }
+}
+.pageProduct-row:first-child {
+  border-top: 1px solid #E1E1E1;
+}
+.pageProduct-dt, .pageProduct-dd {
+  font-size: 12px;
+}
+@media (max-width: 767px) {
+  .pageProduct-dt, .pageProduct-dd {
+    font-size: 11px;
+    margin: 0;
+  }
+}
+.pageProduct-dt {
+  width: 46%;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .pageProduct-dt {
+    width: 100%;
+  }
+}
+.pageProduct-dd {
+  width: 54%;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .pageProduct-dd {
+    width: 100%;
+  }
+}
+
 /* ========================================================================
-Foundation - ファウンデーション
+Globals - グローバルズ
 ======================================================================== */
 /* ========================================================================
 	Layout - レイアウト

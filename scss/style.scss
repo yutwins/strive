@@ -1,11 +1,11 @@
 @charset "UTF-8";
 /* ========================================================================
-Foundation - ファウンデーション
+Globals - グローバルズ
 ======================================================================== */
-@use "foundation/color" as *;
-@use "foundation/reset" as *;
-@use "foundation/mixin" as *;
-@use "foundation/variables" as *;
+@use "globals/color" as *;
+@use "globals/reset" as *;
+@use "globals/mixin" as *;
+@use "globals/variables" as *;
 
 /* ========================================================================
 	Layout - レイアウト
@@ -17,3 +17,10 @@ Foundation - ファウンデーション
 /* ========================================================================
 	Objects - オブジェクト
 ======================================================================== */
+@use "objects/hero" as *;
+@use "objects/mission" as *;
+@use "objects/feature" as *;
+@use "objects/product" as *;
+@use "objects/pageAbout" as *;
+@use "objects/pageProduct" as *;
+
