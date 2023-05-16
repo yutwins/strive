@@ -7,6 +7,16 @@
                 <p class="page-top__subTitle">LEDについて</p>
             </div>
         </div>
+        <div class="hero-floatings">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square01.png" alt="ブロック" class="hero-floating hero-floating01">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square02.png" alt="ブロック" class="hero-floating hero-floating02">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square03.png" alt="ブロック" class="hero-floating hero-floating03">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square04.png" alt="ブロック" class="hero-floating hero-floating04">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square05.png" alt="ブロック" class="hero-floating hero-floating05">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square06.png" alt="ブロック" class="hero-floating hero-floating06">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square02.png" alt="ブロック" class="hero-floating hero-floating07">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square02.png" alt="ブロック" class="hero-floating hero-floating08">
+        </div>
     </section>
     <!-- /.page-top -->
 

@@ -7,6 +7,16 @@
                 <p class="page-top__subTitle">お問い合わせ</p>
             </div>
         </div>
+        <div class="hero-floatings">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square01.png" alt="ブロック" class="hero-floating hero-floating01">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square02.png" alt="ブロック" class="hero-floating hero-floating02">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square03.png" alt="ブロック" class="hero-floating hero-floating03">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square04.png" alt="ブロック" class="hero-floating hero-floating04">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square05.png" alt="ブロック" class="hero-floating hero-floating05">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square06.png" alt="ブロック" class="hero-floating hero-floating06">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square02.png" alt="ブロック" class="hero-floating hero-floating07">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square02.png" alt="ブロック" class="hero-floating hero-floating08">
+        </div>
     </section>
     <!-- /.page-top -->
 
@@ -14,56 +24,7 @@
         <div class="page-contents">
             <section class="section pageContact">
                 <div class="inner pageContact-inner">
-                    <form action="" class="contact-form">
-                        <dl class="contact-form__dl">
-                            <div class="contact-form__row">
-                                <dt class="contact-form__label"><label for="your-name">お名前</label></dt>
-                                <dd class="contact-form__input">
-                                    <input id="your-name" type="text" placeholder="お名前">
-                                </dd>
-                            </div>
-                            <div class="contact-form__row">
-                                <dt class="contact-form__label"><label for="your-furigana">会社名</label></dt>
-                                <dd class="contact-form__input">
-                                    <input id="your-company" type="text" placeholder="会社名">
-                                </dd>
-                            </div>
-                            <div class="contact-form__row">
-                                <dt class="contact-form__label"><label for="your-email">メールアドレス</label></dt>
-                                <dd class="contact-form__input"><input id="your-email" type="email"
-                                        placeholder="メールアドレス"></dd>
-                            </div>
-                            <div class="contact-form__row">
-                                <dt class="contact-form__label"><label for="your-number">電話番号</label></dt>
-                                <dd class="contact-form__input"><input id="your-number" type="text"
-                                        placeholder="電話番号"></dd>
-                            </div>
-                            <div class="contact-form__row">
-                                <dt class="contact-form__label"><label for="your-select">お問い合わせの目的</label></dt>
-                                <dd class="contact-form__input">
-                                    <select name="example" id="" class="contact-form__select">
-                                        <option class="contact-form__option" value="" disabled selected hidden>ご選択ください</option>
-                                            <option class="contact-form__option" value="相続">相続</option>
-                                            <option class="contact-form__option" value="遺言">遺言</option>
-                                            <option class="contact-form__option" value="終活">終活</option>
-                                            <option class="contact-form__option" value="税金">税金</option>
-                                            <option class="contact-form__option" value="お知らせ">お知らせ</option>
-                                            <option class="contact-form__option" value="家族信託">家族信託</option>
-                                            <option class="contact-form__option" value="その他">その他</option>
-                                    </select>
-                                </dd>
-                            </div>
-                            <div class="contact-form__row">
-                                <dt class="contact-form__label"><label for="your-message">お問い合わせ内容</label></dt>
-                                <dd class="contact-form__input">
-                                    <textarea name="" id="your-message" placeholder="お問い合わせ内容を入力してください。"></textarea>
-                                </dd>
-                            </div> 
-                        </dl>
-                        <div class="contact-form__submit">
-                            <input type="submit" value="送信する">
-                        </div>
-                    </form>                
+                <?php echo do_shortcode('[contact-form-7 id="16" title="お問い合わせ"]'); ?>
                 </div>
             </section>
             <!-- /.section pageContact -->

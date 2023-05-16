@@ -63,6 +63,14 @@
             }
         }
 
+        &__link {
+            width: 100%;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+
         &__imgArea {
             margin: 0;
             border-radius: 8px;

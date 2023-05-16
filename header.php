@@ -14,11 +14,11 @@
 
     <!-- ②SEO対策の補助的措置 -->
     <!-- サイトのタイトル -->
-    <title>ストライブ株式会社</title>
+    <title>ストライブ株式会社 | LEDビジョンメーカー</title>
     <!-- キーワード -->
-    <meta name="keywords" content="">
+    <meta name="keywords" content="LED,LEDビジョン">
     <!-- サイトの説明 -->
-    <meta name="description" content="">
+    <meta name="description" content="私たちは自社で製造した最高基準の品質をもつLEDビジョンを提供しています。屋内 / 屋外広告、舞台展示、スポーツスタジアムのスコアボード等、世界中の様々な場面で活用されています。">
     <!-- 重複するURLを一本化 -->
     <link rel="canonical" href="">
 

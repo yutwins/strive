@@ -1,7 +1,7 @@
 <footer class="footer">
         <inner class="footer-inner">
             <div class="footer-logoArea">
-                <a href="#" class="footer-logo">
+                <a href="<?php echo esc_url(home_url( '/' )); ?>" class="footer-logo">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/strive-logo.png" alt="ロゴ" class="footer-logo__img">
                 </a>
             </div>
@@ -12,16 +12,16 @@
                 <nav class="footer-nav">
                     <ul class="footer-ul">
                         <li class="footer-list">
-                            <a href="" class="footer-list__item">LEDについて</a>
+                            <a href="<?php echo esc_url(home_url( 'about' )); ?>" class="footer-list__item">LEDについて</a>
                         </li>
                         <li class="footer-list">
-                            <a href="" class="footer-list__item">製品一覧</a>
+                            <a href="<?php echo esc_url(home_url( 'product' )); ?>" class="footer-list__item">製品一覧</a>
                         </li>
                         <li class="footer-list">
-                            <a href="" class="footer-list__item">会社概要</a>
+                            <a href="<?php echo esc_url(home_url( 'company' )); ?>" class="footer-list__item">会社概要</a>
                         </li>
                         <li class="footer-list">
-                            <a href="" class="footer-list__item">お問い合わせ</a>
+                            <a href="<?php echo esc_url(home_url( 'contact' )); ?>" class="footer-list__item">お問い合わせ</a>
                         </li>
                     </ul>
                 </nav>

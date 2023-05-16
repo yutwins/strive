@@ -32,3 +32,42 @@ jQuery(document).ready(function(){
       jQuery('.slider').slick('slickPlay');
     });
 });
+
+
+// ナビゲーションアニメーション
+// document.addEventListener("DOMContentLoaded", () => {
+//   const navItems = document.querySelectorAll(".pageProduct-list");
+//   const sections = document.querySelectorAll("pageProduct-item");
+//   const navBar = document.getElementById("navbar");
+
+//   const setActiveNavItem = () => {
+//       let currentSection = null;
+//       sections.forEach((section) => {
+//           const sectionTop = section.getBoundingClientRect().top;
+//           if (sectionTop <= 100) {
+//               currentSection = section;
+//           }
+//       });
+
+//       navItems.forEach((navItem) => {
+//           navItem.classList.remove("active");
+//           if (navItem.getAttribute("data-target") === currentSection.id) {
+//             navItem.classList.add("active");
+//           }
+//       });
+//   };
+  
+//   const handleScroll = () => {
+//       if (window.scrollY >= 100) {
+//           navBar.style.display = "block";
+//       } else {
+//           navBar.style.display = "none";
+//       }
+  
+//       setActiveNavItem();
+//   };
+  
+//   window.addEventListener("scroll", handleScroll);
+// });
+
+
