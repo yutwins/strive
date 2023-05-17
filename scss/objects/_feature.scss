@@ -3,6 +3,7 @@
 .feature {
     background-color: $color-black01;
     position: relative;
+    overflow: hidden;
 
     &::before,
     &::after {

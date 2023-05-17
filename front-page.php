@@ -74,10 +74,10 @@
     <section class="section mission">
         <h4 class="section__enTitle section__enTitle--right mission__enTitle">MISSION</h4>
         <div class="mission-floatings">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square01.png" alt="ブロック" class="mission-floating mission-floating01">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square02.png" alt="ブロック" class="mission-floating mission-floating02">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square03.png" alt="ブロック" class="mission-floating mission-floating03">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square04.png" alt="ブロック" class="mission-floating hero-floating04">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square-gray01.png" alt="ブロック" class="mission-floating mission-floating01">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square-gray02.png" alt="ブロック" class="mission-floating mission-floating02">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square-gray03.png" alt="ブロック" class="mission-floating mission-floating03">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square-gray04.png" alt="ブロック" class="mission-floating mission-floating04">
         </div>
         <div class="inner mission-inner">
             <div class="mission-titleArea">
@@ -108,6 +108,10 @@
     <!-- /.feature -->
 
     <section id="product" class="section product">
+        <div class="product-floatings">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square-gray04.png" alt="ブロック" class="product-floating product-floating01">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square-gray03.png" alt="ブロック" class="product-floating product-floating02">
+        </div>
         <div class="inner product-inner">
             <h4 class="section__enTitle section__enTitle--right product__enTitle">PRODUCT</h4>
             <h2 class="product__title">製品一覧</h2>

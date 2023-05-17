@@ -27,29 +27,29 @@
                 <div class="inner pageProduct-inner">
                     <div class="pageProduct-items">
                         <div id="pageProduct-item01" class="pageProduct-item">
-                            <!-- <div class="pageProduct-space"></div> -->
                             <nav id="navbar" class="pageProduct-nav">
                                 <ul class="pageProduct-ul">
-                                    <li class="pageProduct-list active" data-target="productItem01">
-                                        SV-CV Series
+                                    <li class="pageProduct-list">
+                                        <a href="#pageProduct-item01" class="pageProduct-list__item">SV-CV Series</a>
                                     </li>
-                                    <li class="pageProduct-list" data-target="productItem02">
-                                        SV-TP Series
+                                    <li class="pageProduct-list">
+                                        <a href="#pageProduct-item02" class="pageProduct-list__item">SV-TP Series</a>
                                     </li>
-                                    <li class="pageProduct-list" data-target="productItem03">
-                                        SV-ST Series
+                                    <li class="pageProduct-list">
+                                        <a href="#pageProduct-item03" class="pageProduct-list__item">SV-ST Series</a>
                                     </li>
-                                    <li class="pageProduct-list" data-target="productItem04">
-                                        SV-PT Series
+                                    <li class="pageProduct-list">
+                                        <a href="#pageProduct-item04" class="pageProduct-list__item">SV-PT Series</a>
                                     </li>
-                                    <li class="pageProduct-list" data-target="productItem05">
-                                        SV-AF Series
+                                    <li class="pageProduct-list">
+                                        <a href="#pageProduct-item05" class="pageProduct-list__item">SV-AF Series</a>
                                     </li>
-                                    <li class="pageProduct-list" data-target="productItem06">
-                                        SV-MG Series
+                                    <li class="pageProduct-list">
+                                        <a href="#pageProduct-item06" class="pageProduct-list__item">SV-MG Series</a>
                                     </li>
                                 </ul>
                             </nav>
+                            <div class="pageProduct-space"></div>
                             <div class="pageProduct-contents">
                                 <p class="pageProduct-item__head">屋内用LEDビジョン</p>
                                 <h3 class="pageProduct-item__title">SV-CV Series</h3>
@@ -98,29 +98,7 @@
                             </div>
                         </div>
                         <div id="pageProduct-item02" class="pageProduct-item">
-                            <nav class="pageProduct-nav">
-                                <ul class="pageProduct-ul">
-                                    <li class="pageProduct-list">
-                                        SV-CV Series
-                                    </li>
-                                    <li class="pageProduct-list active">
-                                        SV-TP Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-ST Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-PT Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-AF Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-MG Series
-                                    </li>
-                                </ul>
-                            </nav>
-                            <!-- <div class="pageProduct-space"></div> -->
+                            <div class="pageProduct-space"></div>
                             <div class="pageProduct-contents">
                                 <p class="pageProduct-item__head">透過型LEDビジョン</p>
                                 <h3 class="pageProduct-item__title">SV-TP Series</h3>
@@ -169,29 +147,7 @@
                             </div>
                         </div>
                         <div id="pageProduct-item03" class="pageProduct-item">
-                            <nav class="pageProduct-nav">
-                                <ul class="pageProduct-ul">
-                                    <li class="pageProduct-list">
-                                        SV-CV Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-TP Series
-                                    </li>
-                                    <li class="pageProduct-list active">
-                                        SV-ST Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-PT Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-AF Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-MG Series
-                                    </li>
-                                </ul>
-                            </nav>
-                            <!-- <div class="pageProduct-space"></div> -->
+                            <div class="pageProduct-space"></div>
                             <div class="pageProduct-contents">
                                 <p class="pageProduct-item__head">屋内用LEDビジョン</p>
                                 <h3 class="pageProduct-item__title">SV-ST Series</h3>
@@ -240,29 +196,7 @@
                             </div>
                         </div>
                         <div id="pageProduct-item04" class="pageProduct-item">
-                            <nav class="pageProduct-nav">
-                                <ul class="pageProduct-ul">
-                                    <li class="pageProduct-list">
-                                        SV-CV Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-TP Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-ST Series
-                                    </li>
-                                    <li class="pageProduct-list active">
-                                        SV-PT Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-AF Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-MG Series
-                                    </li>
-                                </ul>
-                            </nav>
-                            <!-- <div class="pageProduct-space"></div> -->
+                            <div class="pageProduct-space"></div>
                             <div class="pageProduct-contents">
                                 <p class="pageProduct-item__head">ポスター型LEDビジョン</p>
                                 <h3 class="pageProduct-item__title">SV-PT Series</h3>
@@ -349,29 +283,7 @@
                             </div>
                         </div>
                         <div id="pageProduct-item05" class="pageProduct-item">
-                            <nav class="pageProduct-nav">
-                                <ul class="pageProduct-ul">
-                                    <li class="pageProduct-list">
-                                        SV-CV Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-TP Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-ST Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-PT Series
-                                    </li>
-                                    <li class="pageProduct-list active">
-                                        SV-AF Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-MG Series
-                                    </li>
-                                </ul>
-                            </nav>
-                            <!-- <div class="pageProduct-space"></div> -->
+                            <div class="pageProduct-space"></div>
                             <div class="pageProduct-contents">
                                 <p class="pageProduct-item__head">屋外用LEDビジョン</p>
                                 <h3 class="pageProduct-item__title">SV-AF Series</h3>
@@ -496,29 +408,7 @@
                             </div>
                         </div>
                         <div id="pageProduct-item06" class="pageProduct-item">
-                            <nav class="pageProduct-nav">
-                                <ul class="pageProduct-ul">
-                                    <li class="pageProduct-list">
-                                        SV-CV Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-TP Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-ST Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-PT Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-AF Series
-                                    </li>
-                                    <li class="pageProduct-list active">
-                                        SV-MG Series
-                                    </li>
-                                </ul>
-                            </nav>
-                            <!-- <div class="pageProduct-space"></div> -->
+                            <div class="pageProduct-space"></div>
                             <div class="pageProduct-contents">
                                 <p class="pageProduct-item__head">曲面対応屋外用LEDビジョン</p>
                                 <h3 class="pageProduct-item__title">SV-MG Series</h3>

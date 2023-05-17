@@ -6,14 +6,18 @@
     margin-top: 90px;
     background-color: $pureWhite;
     border-radius: 45px 45px 0 0;
+    overflow: hidden;
 
     @media (max-width: 1100px) {
         padding-top: 50px;
+        margin-top: 0;
     }
 
     &-inner {
         padding-top: 217px;
         padding-bottom: 180px;
+        position: relative;
+        z-index: 20;
 
         @media (max-width: 1100px) {
             padding-top: 30px;
@@ -53,9 +57,9 @@
         height: auto;
     }
     &-floating01 {
-        width: 48px;
-        top: 140px;
-        left: 30%;
+        width: 26px;
+        top: 170px;
+        left: 60%;
 
         @include animation(
             $name: float03,
@@ -64,9 +68,9 @@
         )
     }
     &-floating02 {
-        width: 11px;
-        top: 160px;
-        left: 20%;
+        width: 121px;
+        top: 250px;
+        right: 20%;
 
         @include animation(
             $name: float02,
@@ -75,9 +79,9 @@
         )
     }
     &-floating03 {
-        width: 48px;
-        top: 190px;
-        right: 23%;
+        width: 40px;
+        top: 500px;
+        left: 15%;
 
         @include animation(
             $name: float01,
@@ -86,9 +90,9 @@
         )
     }
     &-floating04 {
-        width: 18px;
-        top: 310px;
-        left: 80%;
+        width: 85px;
+        top: 600px;
+        left: 20%;
 
         @include animation(
             $name: float02,
@@ -114,7 +118,7 @@
             -webkit-text-fill-color: transparent; /* 切り抜いた部分は背景を表示 */
         }
         &--upper {
-            background: -webkit-linear-gradient(20deg, $color-blue01 0%, $base-color 50%, $base-color 100%); /* 背景色にグラデーションを指定 */
+            background: -webkit-linear-gradient(20deg, $base-color 0%, $color-blue01 30%, $base-color 100%); /* 背景色にグラデーションを指定 */
             background-clip: text;
         }
         &--bottom {

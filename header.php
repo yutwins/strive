@@ -16,7 +16,7 @@
     <!-- サイトのタイトル -->
     <title>ストライブ株式会社 | LEDビジョンメーカー</title>
     <!-- キーワード -->
-    <meta name="keywords" content="LED,LEDビジョン">
+    <meta name="keywords" content="LED,LEDビジョン,ストライブ,strive,">
     <!-- サイトの説明 -->
     <meta name="description" content="私たちは自社で製造した最高基準の品質をもつLEDビジョンを提供しています。屋内 / 屋外広告、舞台展示、スポーツスタジアムのスコアボード等、世界中の様々な場面で活用されています。">
     <!-- 重複するURLを一本化 -->
@@ -34,7 +34,7 @@
     <meta name="twitter:site" content="">
 
     <!-- ④その他の指定 -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <!-- faviconの指定 -->
     <link rel="shortcut icon" href="./favicon.ico">
     <!-- 外部のCSSファイル -->
@@ -61,7 +61,7 @@
                             <a href="<?php echo esc_url(home_url( 'about' )); ?>" class="header-li__item">LEDについて</a>
                         </li>
                         <li class="header-li">
-                            <a href="<?php echo esc_url(home_url( 'product' )); ?>" class="header-li__item">製品一覧</a>
+                            <a href="<?php echo esc_url(home_url( 'product' )); ?>#" class="header-li__item">製品一覧</a>
                         </li>
                         <li class="header-li">
                             <a href="<?php echo esc_url(home_url( 'company' )); ?>" class="header-li__item">会社概要</a>

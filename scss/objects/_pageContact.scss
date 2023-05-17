@@ -40,7 +40,7 @@
     &__submit {
         width: 234px;
         height: 58px;
-        margin: 0 auto;
+        margin: 60px auto 0;
         display: grid;
         place-items: center;
         background-color: $base-color;
@@ -50,6 +50,7 @@
         @include mq("sp") {
             width: 246px;
             height: 57px;
+            margin: 30px auto 0;
         }
 
         & > p {
@@ -66,6 +67,14 @@
             color: $pureWhite;
             font-size: 17px;
             font-weight: bold;
+            transition: all 0.3s ease 0s;
+            border-radius: 42px;
+
+            &:hover {
+                background-color: $pureWhite;
+                color: $base-color;
+                border: 1px solid $base-color;
+            }
 
             @include mq("sp") {
                 font-size: 15px;
@@ -92,21 +101,17 @@
         border: none;
         border-radius: 8px;
         cursor: pointer;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    textarea {
 
         &::placeholder {
             color: $color-gray12;
             font-size: 15px;
-
+    
             @include mq("sp") {
                 font-size: 13px;
             }
         }
     }
+
     textarea {
         width: 100%;
         height: 267px;
@@ -140,8 +145,16 @@
         pointer-events: none;
         z-index: 5;
     }
-
 }
+.wpcf7-select {
+    color: $base-color;
+    font-weight: 500;
+
+    @include mq("sp") {
+        font-size: 13px;
+    }
+}
+
 .wpcf7 form.invalid .wpcf7-response-output {
     border-color: $base-color;
 }
@@ -165,4 +178,10 @@
     width: 100%;
     height: 100%;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        background-color: $pureWhite;
+        color: $base-color;
+    }
 }

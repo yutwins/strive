@@ -38,6 +38,7 @@ $breakpoints: (
 
 .section {
     position: relative;
+    overflow: hidden;
 }
 
 .section__enTitle {
@@ -142,11 +143,16 @@ $breakpoints: (
         &::before {
             width: 231px;
             height: 231px;
-            bottom: -50px;
-            right: -50px;
-            background: none;
-            background: linear-gradient(45deg, $color-blue03 0%, $color-blue02 100%);
-            filter: blur(115px);
+            width: 150%;
+            height: 150%;
+            bottom: -130px;
+            right: -150px;
+            // bottom: 0;
+            // right: 0;
+            // background: none;
+            // background: linear-gradient(45deg, $color-blue03 0%, $color-blue02 100%);
+            // filter: blur(95px);
+            background: url(../images/strive-page-top-bg-sp02.png) no-repeat center center / cover;
         }
     }
 
@@ -164,7 +170,7 @@ $breakpoints: (
         line-height: 1.2;
         font-weight: 500;
         letter-spacing: .48em;
-        background: -webkit-linear-gradient(1800deg, $color-gray03 0%, $pureWhite 80%, $pureWhite 100%); /* 背景色にグラデーションを指定 初期値を設定 */
+        background: -webkit-linear-gradient(1800deg, $color-gray03 0%, $pureWhite 35%, $pureWhite 100%); /* 背景色にグラデーションを指定 初期値を設定 */
         background-clip: text;
         white-space: nowrap;
         
@@ -189,6 +195,7 @@ $breakpoints: (
     width: 100%;
     height: auto;
     position: relative;
+    z-index: 5;
 }
 .page-contents {
     width: 100%;

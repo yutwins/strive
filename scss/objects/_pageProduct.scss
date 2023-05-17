@@ -17,7 +17,7 @@
         padding-top: 140px;
         padding-bottom: 150px;
         
-        @include mq("sp") {
+        @media (max-width: 1100px) {
             padding-top: 30px;
             padding-bottom: 80px;
         }
@@ -93,13 +93,33 @@
     }
 
 
-    &-nav {
-        // position: fixed;
-        // top: 0;
-        // left: 0;
+    #navbar {
+        position: absolute;
+        top: 140px;
+        left: 12.5%;
 
+        @media (max-width: 1100px) {
+            top: 50px;
+            left: 8%;
+        }
         @include mq("sp") {
             display: none;
+        }
+        
+        
+        &.fixed {
+            position: fixed;
+            top: 100px;
+            left: 12.5%;
+
+            @media (max-width: 1100px) {
+                left: 8%;
+            }
+        }
+        &.stop {
+            // position: absolute;
+            // top: auto;
+            // bottom: 200px;
         }
     }
 
@@ -132,6 +152,15 @@
                 background-color: $accent-color;
                 transform: translateY(-50%);
             }
+        }
+    }
+    
+    &-space {
+        display: none;
+        display: block;
+
+        &.active {
+            display: block;
         }
     }
 

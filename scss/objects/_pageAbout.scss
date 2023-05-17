@@ -8,8 +8,6 @@
     }
 }
 
-
-
 .ledVision {
 
     &__enTitle {
@@ -54,6 +52,7 @@
     &__head {
         font-size: 40px;
         font-weight: normal;
+        white-space: nowrap;
 
         @include mq("sp") {
             font-size: 32px;
@@ -115,9 +114,13 @@
         text-align: center;
 
         &::before {
-            width: 535px;
-            height: 550px; 
-            right: -270px;
+            width: 800px;
+            height: 1000px;
+            top: 200px; 
+            right: -320px;
+            background: url(../images/strive-page-top-bg-sp02.png) no-repeat center center / cover;
+            filter: blur(55px);
+            opacity: 1;
         }
     }
 
@@ -128,7 +131,7 @@
             background-color: $pureWhite;
         }
 
-        @include mq("sp") {
+        @media (max-width: 1100px) {
             margin-top: 140px;
         }
     }
@@ -136,7 +139,7 @@
     &__inner {
         padding: 150px 0;
 
-        @include mq("sp") {
+        @media (max-width: 1100px) {
             padding: 24px 0 80px 0;
         }
     }
@@ -164,6 +167,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 34px 0;
+
 
         @include mq("sp") {
             display: block;
@@ -195,6 +199,9 @@
             opacity: .1;
         }
 
+        @media (max-width: 1100px) {
+            width: 45.2%;
+        }
         @include mq("sp") {
             width: 100%;
             min-height: 0;
@@ -232,6 +239,10 @@
             width: 52px;
             height: 52px;
             margin: 0;
+
+            &::before {
+                filter: blur(20px);
+            }
         }
     }
     &__itemImg {
@@ -316,7 +327,7 @@
             width: 100%;
             max-width: 375px;
             margin: 35px auto 0;
-            padding: 25px;
+            padding: 25px 25px 0 25px;
         }
         
         &__head {
@@ -380,7 +391,7 @@
 }
 
 .ledVisionPoints {
-    background-color: $color-gray05;
+    background: linear-gradient(180deg, $color-gray05 0%, $pureWhite 100%);
     padding-top: 140px;
 
     &__enTitle {
@@ -449,15 +460,15 @@
             }
         }
         &:nth-child(2) {
-
+            
             &::before {
-                background-color: $color-gray06;
+                background: linear-gradient(180deg, $color-gray07 0%, $pureWhite 100%);
             }
         }
         &:nth-child(3) {
-            
+
             &::before {
-                background-color: $color-gray07;
+                background: linear-gradient(180deg, $color-gray05 0%, $pureWhite 100%);
             }
         }
         
