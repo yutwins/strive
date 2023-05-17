@@ -1,91 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <!-- ①基本的metaタグ -->
-    <!-- 文字コードの指定 -->
-    <meta charset="utf-8">
-    <!-- IEで常に標準モードで表示させる -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- viewport(レスポンシブ対応) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 電話番号の自動リンク化を無効 -->
-    <meta name="format-detection" content="telephone=no">
-
-    <!-- ②SEO対策の補助的措置 -->
-    <!-- サイトのタイトル -->
-    <title>ストライブ株式会社</title>
-    <!-- キーワード -->
-    <meta name="keywords" content="">
-    <!-- サイトの説明 -->
-    <meta name="description" content="">
-    <!-- 重複するURLを一本化 -->
-    <link rel="canonical" href="">
-
-    <!-- ③SNS対策 -->
-    <meta property="og:site_name" content="">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="urlが入ります">
-    <meta property="fb:app_id" content="AppID">
-    <meta property="og:image" content="">
-    <meta name="twitter:card" content="Summary Card">
-    <meta name="twitter:site" content="">
-
-    <!-- ④その他の指定 -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
-    <!-- faviconの指定 -->
-    <link rel="shortcut icon" href="./favicon.ico">
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- 外部のCSSファイル -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-    <header class="header">
-        <div class="header-inner">
-            <div class="header-logoArea">
-                <a href="#" class="header-logo">
-                    <img src="./images/strive-logo.png" alt="ロゴ" class="header-logo__img">
-                </a>
-            </div>
-            <div class="header-navArea">
-                <nav class="header-nav">
-                    <ul class="header-ul">
-                        <li class="header-li">
-                            <a href="#about" class="header-li__item">LEDについて</a>
-                        </li>
-                        <li class="header-li">
-                            <a href="#product" class="header-li__item">製品一覧</a>
-                        </li>
-                        <li class="header-li">
-                            <a href="#company" class="header-li__item">会社概要</a>
-                        </li>
-                        <li class="header-li">
-                            <a href="#contact" class="btn header-li__btn">
-                                <span class="btn__text header-li__btnText">お問い合わせ</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <!-- /.header -->
-
+<?php get_header(); ?>
 
     <section class="page-top">
         <div class="inner page-top__inner">
             <div class="page-top__titleArea page-about__titleArea">
-                <h2 class="page-top__title gradation-text">ABOUT</h2>
+                <h1 class="page-top__title gradation-text">ABOUT</h1>
                 <p class="page-top__subTitle">LEDについて</p>
             </div>
+        </div>
+        <div class="hero-floatings">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square01.png" alt="ブロック" class="hero-floating hero-floating01">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square02.png" alt="ブロック" class="hero-floating hero-floating02">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square03.png" alt="ブロック" class="hero-floating hero-floating03">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square04.png" alt="ブロック" class="hero-floating hero-floating04">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square05.png" alt="ブロック" class="hero-floating hero-floating05">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square06.png" alt="ブロック" class="hero-floating hero-floating06">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square02.png" alt="ブロック" class="hero-floating hero-floating07">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square02.png" alt="ブロック" class="hero-floating hero-floating08">
         </div>
     </section>
     <!-- /.page-top -->
@@ -101,7 +31,7 @@
                             <p class="ledVision__text">LEDビジョンとは、大型スクリーンやパネルなどに、発光ダイオード（LED）を使用して、映像やグラフィックなどを表示する技術です。従来のプロジェクターや液晶ディスプレイよりも、明るさやコントラストが高く、視認性が良いため、屋内だけではなく屋外での使用も可能です。一般的には、スポーツ競技場やコンサート会場、ビルの外観など、大型の表示が必要な場所で利用されています。</p>
                         </div>
                         <div class="ledVision-imgArea">
-                            <img src="./images/strive-ledVision-img.png" alt="LEDビジョン" class="ledVision__img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-ledVision-img.png" alt="LEDビジョン" class="ledVision__img">
                         </div>
                     </div>
                 </div>
@@ -115,7 +45,7 @@
                     <ul class="ledVision-feature__items">
                         <li class="ledVision-feature__item">
                             <figure class="ledVision-feature__itemImgArea">
-                                <img src="./images/strive-ledVision-feature-item01.png" alt="圧倒的な明るさ" class="ledVision-feature__itemImg">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/strive-ledVision-feature-item01.png" alt="圧倒的な明るさ" class="ledVision-feature__itemImg">
                             </figure>
                             <div class="ledVision-feature__itemTextArea">
                                 <h4 class="ledVision-feature__itemTitle gradation-text">圧倒的な明るさ</h4>
@@ -124,7 +54,7 @@
                         </li>
                         <li class="ledVision-feature__item">
                             <figure class="ledVision-feature__itemImgArea">
-                                <img src="./images/strive-ledVision-feature-item02.png" alt="使用寿命の長さ" class="ledVision-feature__itemImg">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/strive-ledVision-feature-item02.png" alt="使用寿命の長さ" class="ledVision-feature__itemImg">
                             </figure>
                             <div class="ledVision-feature__itemTextArea">
                                 <h4 class="ledVision-feature__itemTitle gradation-text">使用寿命の長さ</h4>
@@ -133,7 +63,7 @@
                         </li>
                         <li class="ledVision-feature__item">
                             <figure class="ledVision-feature__itemImgArea">
-                                <img src="./images/strive-ledVision-feature-item03.png" alt="防水・防塵" class="ledVision-feature__itemImg">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/strive-ledVision-feature-item03.png" alt="防水・防塵" class="ledVision-feature__itemImg">
                             </figure>
                             <div class="ledVision-feature__itemTextArea">
                                 <h4 class="ledVision-feature__itemTitle gradation-text">防水・防塵</h4>
@@ -142,7 +72,7 @@
                         </li>
                         <li class="ledVision-feature__item">
                             <figure class="ledVision-feature__itemImgArea">
-                                <img src="./images/strive-ledVision-feature-item04.png" alt="柔軟性" class="ledVision-feature__itemImg">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/strive-ledVision-feature-item04.png" alt="柔軟性" class="ledVision-feature__itemImg">
                             </figure>
                             <div class="ledVision-feature__itemTextArea">
                                 <h4 class="ledVision-feature__itemTitle gradation-text">柔軟性</h4>
@@ -151,7 +81,7 @@
                         </li>
                         <li class="ledVision-feature__item">
                             <figure class="ledVision-feature__itemImgArea">
-                                <img src="./images/strive-ledVision-feature-item05.png" alt="省エネ" class="ledVision-feature__itemImg">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/strive-ledVision-feature-item05.png" alt="省エネ" class="ledVision-feature__itemImg">
                             </figure>
                             <div class="ledVision-feature__itemTextArea">
                                 <h4 class="ledVision-feature__itemTitle gradation-text">省エネ</h4>
@@ -160,7 +90,7 @@
                         </li>
                         <li class="ledVision-feature__item">
                             <figure class="ledVision-feature__itemImgArea">
-                                <img src="./images/strive-ledVision-feature-item06.png" alt="圧倒的な明るさ" class="ledVision-feature__itemImg">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/strive-ledVision-feature-item06.png" alt="圧倒的な明るさ" class="ledVision-feature__itemImg">
                             </figure>
                             <div class="ledVision-feature__itemTextArea">
                                 <h4 class="ledVision-feature__itemTitle gradation-text">メンテナンス</h4>
@@ -187,7 +117,7 @@
                         <div class="PixelPitch-top__centerLine"></div>
                         <div class="PixelPitch-topImgArea">
                             <p class="PixelPitch-top__imgHead">ピクセルピッチイメージ図</p>
-                            <img src="./images/strive-pp-img.png" alt="ピクセルピッチイメージ図" class="PixelPitch-top__img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-pp-img.png" alt="ピクセルピッチイメージ図" class="PixelPitch-top__img">
                         </div>
                     </div>
                 </div>
@@ -210,8 +140,8 @@
                                     <p class="ledVisionPoints-item01__descText">「視認距離」とは？ … 映像が最適に見える距離</p>
                                 </div>
                                 <picture>
-                                    <source srcset="./images/strive-ledVision-points-item01-img.png" media="(min-width: 768px)">
-                                    <img src="./images/strive-ledVision-points-item01-img-sp.png" alt="グラフ画像" class="ledVisionPoints-item01__img">
+                                    <source srcset="<?php echo get_template_directory_uri(); ?>/images/strive-ledVision-points-item01-img.png" media="(min-width: 768px)">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/strive-ledVision-points-item01-img-sp.png" alt="グラフ画像" class="ledVisionPoints-item01__img">
                                 </picture>
                             </div>
                         </li>
@@ -224,8 +154,8 @@
                                 <ul class="ledVisionPoints-item02__ul">
                                     <li class="ledVisionPoints-item02__list">
                                         <picture>
-                                            <source srcset="./images/strive-ledVision-points-item02-img01.png" media="(min-width: 768px)">
-                                            <img src="./images/strive-ledVision-points-item02-img01-sp.png" alt="デスクトップパソコンとノートパソコン" class="ledVisionPoints-item02__listImg">
+                                            <source srcset="<?php echo get_template_directory_uri(); ?>/images/strive-ledVision-points-item02-img01.png" media="(min-width: 768px)">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-ledVision-points-item02-img01-sp.png" alt="デスクトップパソコンとノートパソコン" class="ledVisionPoints-item02__listImg">
                                         </picture>
                                         <div class="ledVisionPoints-item02__listTitleArea">
                                             <p class="ledVisionPoints-item02__listTitle">デスクトップパソコン<br class="pc-only">ノートパソコン</p>
@@ -234,8 +164,8 @@
                                     </li>
                                     <li class="ledVisionPoints-item02__list">
                                         <picture>
-                                            <source srcset="./images/strive-ledVision-points-item02-img02.png" media="(min-width: 768px)">
-                                            <img src="./images/strive-ledVision-points-item02-img02-sp.png" alt="液晶ディスプレイ" class="ledVisionPoints-item02__listImg">
+                                            <source srcset="<?php echo get_template_directory_uri(); ?>/images/strive-ledVision-points-item02-img02.png" media="(min-width: 768px)">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-ledVision-points-item02-img02-sp.png" alt="液晶ディスプレイ" class="ledVisionPoints-item02__listImg">
                                         </picture>
                                         <div class="ledVisionPoints-item02__listTitleArea">
                                             <p class="ledVisionPoints-item02__listTitle">液晶ディスプレイ</p>
@@ -244,8 +174,8 @@
                                     </li>
                                     <li class="ledVisionPoints-item02__list">
                                         <picture>
-                                            <source srcset="./images/strive-ledVision-points-item02-img03.png" media="(min-width: 768px)">
-                                            <img src="./images/strive-ledVision-points-item02-img03-sp.png" alt="屋内LEDビジョン" class="ledVisionPoints-item02__listImg">
+                                            <source srcset="<?php echo get_template_directory_uri(); ?>/images/strive-ledVision-points-item02-img03.png" media="(min-width: 768px)">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-ledVision-points-item02-img03-sp.png" alt="屋内LEDビジョン" class="ledVisionPoints-item02__listImg">
                                         </picture>
                                         <div class="ledVisionPoints-item02__listTitleArea">
                                             <p class="ledVisionPoints-item02__listTitle">屋内LEDビジョン</p>
@@ -254,8 +184,8 @@
                                     </li>
                                     <li class="ledVisionPoints-item02__list">
                                         <picture>
-                                            <source srcset="./images/strive-ledVision-points-item02-img04.png" media="(min-width: 768px)">
-                                            <img src="./images/strive-ledVision-points-item02-img04-sp.png" alt="屋外LEDビジョン" class="ledVisionPoints-item02__listImg">
+                                            <source srcset="<?php echo get_template_directory_uri(); ?>/images/strive-ledVision-points-item02-img04.png" media="(min-width: 768px)">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-ledVision-points-item02-img04-sp.png" alt="屋外LEDビジョン" class="ledVisionPoints-item02__listImg">
                                         </picture>
                                         <div class="ledVisionPoints-item02__listTitleArea">
                                             <p class="ledVisionPoints-item02__listTitle">屋外LEDビジョン</p>
@@ -265,9 +195,9 @@
                                 </ul>
                                 <div class="ledVisionPoints-item02__level">
                                     <p class="ledVisionPoints-item02__level--dark">暗</p>
-                                    <picture>
-                                        <source srcset="./images/strive-ledVision-points-item02-arrow.pngL" media="(min-width: 768px)">
-                                        <img src="./images/strive-ledVision-points-item02-arrow-sp.png" alt="矢印" class="ledVisionPoints-item02__level--arrow">
+                                    <picture class="ledVisionPoints-item02__level--arrowArea">
+                                        <source srcset="<?php echo get_template_directory_uri(); ?>/images/strive-ledVision-points-item02-arrow.png" media="(min-width: 768px)">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/strive-ledVision-points-item02-arrow-sp.png" alt="矢印" class="ledVisionPoints-item02__level--arrow">
                                     </picture>
                                     <p class="ledVisionPoints-item02__level--light">明</p>
                                 </div>
@@ -283,8 +213,8 @@
                                     <li class="ledVisionPoints-item03__list">
                                         <figure class="ledVisionPoints-item03__listImgArea">
                                             <picture>
-                                                <source srcset="./images/strive-ledVisionPoints-item03-img01.png" media="(min-width: 768px)">
-                                                <img src="./images/strive-ledVisionPoints-item03-img01-sp.png" alt="SMD 3 in 1 LED" class="ledVisionPoints-item03__listImg">
+                                                <source srcset="<?php echo get_template_directory_uri(); ?>/images/strive-ledVisionPoints-item03-img01.png" media="(min-width: 768px)">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/strive-ledVisionPoints-item03-img01-sp.png" alt="SMD 3 in 1 LED" class="ledVisionPoints-item03__listImg">
                                             </picture>
                                         </figure>
                                         <div class="ledVisionPoints-item03__listTextArea">
@@ -295,8 +225,8 @@
                                     <li class="ledVisionPoints-item03__list">
                                         <figure class="ledVisionPoints-item03__listImgArea">
                                             <picture>
-                                                <source srcset="./images/strive-ledVisionPoints-item03-img02.png" media="(min-width: 768px)">
-                                                <img src="./images/strive-ledVisionPoints-item03-img02-sp.png" alt="GOB" class="ledVisionPoints-item03__listImg">
+                                                <source srcset="<?php echo get_template_directory_uri(); ?>/images/strive-ledVisionPoints-item03-img02.png" media="(min-width: 768px)">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/strive-ledVisionPoints-item03-img02-sp.png" alt="GOB" class="ledVisionPoints-item03__listImg">
                                             </picture>
                                         </figure>
                                         <div class="ledVisionPoints-item03__listTextArea">
@@ -307,8 +237,8 @@
                                     <li class="ledVisionPoints-item03__list">
                                         <figure class="ledVisionPoints-item03__listImgArea">
                                             <picture>
-                                                <source srcset="./images/strive-ledVisionPoints-item03-img03.png" media="(min-width: 768px)">
-                                                <img src="./images/strive-ledVisionPoints-item03-img03-sp.png" alt="COB" class="ledVisionPoints-item03__listImg">
+                                                <source srcset="<?php echo get_template_directory_uri(); ?>/images/strive-ledVisionPoints-item03-img03.png" media="(min-width: 768px)">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/strive-ledVisionPoints-item03-img03-sp.png" alt="COB" class="ledVisionPoints-item03__listImg">
                                             </picture>
                                         </figure>
                                         <div class="ledVisionPoints-item03__listTextArea">
@@ -323,52 +253,4 @@
                 </div>
             </section>
             <!-- /.section ledVision-points -->
-
-            <footer class="footer">
-                <inner class="footer-inner">
-                    <div class="footer-logoArea">
-                        <a href="#" class="footer-logo">
-                            <img src="./images/strive-logo.png" alt="ロゴ" class="footer-logo__img">
-                        </a>
-                    </div>
-                    <div class="footer-textArea">
-                        <p class="footer-companyName">ストライブ株式会社</p>
-                        <p class="footer-companyAddress">〒542-0073 大阪府大阪市中央区日本橋1-2-6 日本橋河辺ビル5F</p>
-                        <p class="footer-companyContact">Tel.06-6484-871　Fax.06-6484-8717</p>
-                        <nav class="footer-nav">
-                            <ul class="footer-ul">
-                                <li class="footer-list">
-                                    <a href="" class="footer-list__item">LEDについて</a>
-                                </li>
-                                <li class="footer-list">
-                                    <a href="" class="footer-list__item">製品一覧</a>
-                                </li>
-                                <li class="footer-list">
-                                    <a href="" class="footer-list__item">会社概要</a>
-                                </li>
-                                <li class="footer-list">
-                                    <a href="" class="footer-list__item">お問い合わせ</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </inner>
-                <p class="copyright">© strive inc. All rights reserved.</p>
-            </footer>
-            <!-- /.footer -->
-        </div>
-        <!-- /.page-contents -->
-        
-    </div>
-    <!-- /.page-container -->
-
-
-
-    <!-- jQueryライブラリ読み込みコード -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- slickを読み込む -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="./js/main.js"></script>
-</body>
-
-</html>
+<?php get_footer(); ?>

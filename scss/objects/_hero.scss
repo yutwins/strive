@@ -2,6 +2,11 @@
 
 .hero {
     position: relative;
+    padding-bottom: 100px;
+
+    @include mq("sp") {
+        padding-bottom: 0;
+    }
 
     &::before {
         content: "";
@@ -10,7 +15,6 @@
         height: 1067px;
         position: absolute;
         top: 0;
-        // left: -50px;
         left: 0;
         background: url(../images/strive-hero-bg-gradation.png) no-repeat center center / cover;
     }
@@ -49,7 +53,7 @@
                 display: block;
                 margin: 0 calc(50% - 50vw);
                 width: 100vw;
-                height: 75px;
+                height: 80px;
                 position: absolute;
                 top: 50%;
                 left: 0;
@@ -93,6 +97,180 @@
         }
     }
 
+    &-floatings {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        // z-index: 10;
+
+        @include animation(
+            $name: Opacity,
+            $iteration-count: 1,
+            $duration: 3s,
+        )
+    }
+    &-floating {
+        position: absolute;
+        height: auto;
+    }
+    &-floating01 {
+        width: 48px;
+        top: 140px;
+        left: 30%;
+
+        @include animation(
+            $name: float03,
+            $iteration-count: infinite,
+            $duration: 30s,
+        )
+    }
+    &-floating02 {
+        width: 11px;
+        top: 160px;
+        left: 20%;
+
+        @include animation(
+            $name: float02,
+            $iteration-count: infinite,
+            $duration: 30s,
+        )
+    }
+    &-floating03 {
+        width: 48px;
+        top: 190px;
+        right: 23%;
+
+        @include animation(
+            $name: float01,
+            $iteration-count: infinite,
+            $duration: 30s,
+        )
+    }
+    &-floating04 {
+        width: 18px;
+        top: 310px;
+        left: 80%;
+
+        @include animation(
+            $name: float02,
+            $iteration-count: infinite,
+            $duration: 30s,
+        )
+    }
+    &-floating05 {
+        width: 25px;
+        top: 450px;
+        left: 18%;
+
+        @include animation(
+            $name: float01,
+            $iteration-count: infinite,
+            $duration: 30s,
+        )
+    }
+    &-floating06 {
+        width: 40px;
+        top: 500px;
+        left: 55%;
+
+        @include animation(
+            $name: float04,
+            $iteration-count: infinite,
+            $duration: 30s,
+        )
+    }
+    &-floating07 {
+        width: 11px;
+        top: 550px;
+        left: 45%;
+
+        @include animation(
+            $name: float05,
+            $iteration-count: infinite,
+            $duration: 30s,
+        )
+    }
+    &-floating08 {
+        width: 11px;
+        top: 500px;
+        right: 5%;
+
+        @include animation(
+            $name: float06,
+            $iteration-count: infinite,
+            $duration: 30s,
+        )
+    }
+
+    // animation
+    @keyframes float01 {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(500px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+    }
+    @keyframes float02 {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(-500px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+    }
+    @keyframes float03 {
+        0% {
+          transform: translate(0, 0);
+        }
+        50% {
+          transform: translate(-300px, -300px);
+        }
+        100% {
+          transform: translate(0, 0);
+        }
+    }
+    @keyframes float04 {
+        0% {
+          transform: translate(0, 0);
+        }
+        50% {
+          transform: translate(-500px, -200px);
+        }
+        100% {
+          transform: translate(0, 0);
+        }
+    }
+    @keyframes float05 {
+        0% {
+          transform: translate(0, 0);
+        }
+        50% {
+          transform: translate(500px, 200px);
+        }
+        100% {
+          transform: translate(0, 0);
+        }
+    }
+    @keyframes float06 {
+        0% {
+          transform: translate(0, 0);
+        }
+        50% {
+          transform: translate(-500px, 200px);
+        }
+        100% {
+          transform: translate(0, 0);
+        }
+    }
     
 }
 

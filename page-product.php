@@ -1,90 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <!-- ①基本的metaタグ -->
-    <!-- 文字コードの指定 -->
-    <meta charset="utf-8">
-    <!-- IEで常に標準モードで表示させる -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- viewport(レスポンシブ対応) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 電話番号の自動リンク化を無効 -->
-    <meta name="format-detection" content="telephone=no">
-
-    <!-- ②SEO対策の補助的措置 -->
-    <!-- サイトのタイトル -->
-    <title>ストライブ株式会社</title>
-    <!-- キーワード -->
-    <meta name="keywords" content="">
-    <!-- サイトの説明 -->
-    <meta name="description" content="">
-    <!-- 重複するURLを一本化 -->
-    <link rel="canonical" href="">
-
-    <!-- ③SNS対策 -->
-    <meta property="og:site_name" content="">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="urlが入ります">
-    <meta property="fb:app_id" content="AppID">
-    <meta property="og:image" content="">
-    <meta name="twitter:card" content="Summary Card">
-    <meta name="twitter:site" content="">
-
-    <!-- ④その他の指定 -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
-    <!-- faviconの指定 -->
-    <link rel="shortcut icon" href="./favicon.ico">
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- 外部のCSSファイル -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-    <header class="header">
-        <div class="header-inner">
-            <div class="header-logoArea">
-                <a href="#" class="header-logo">
-                    <img src="./images/strive-logo.png" alt="ロゴ" class="header-logo__img">
-                </a>
-            </div>
-            <div class="header-navArea">
-                <nav class="header-nav">
-                    <ul class="header-ul">
-                        <li class="header-li">
-                            <a href="#about" class="header-li__item">LEDについて</a>
-                        </li>
-                        <li class="header-li">
-                            <a href="#product" class="header-li__item">製品一覧</a>
-                        </li>
-                        <li class="header-li">
-                            <a href="#company" class="header-li__item">会社概要</a>
-                        </li>
-                        <li class="header-li">
-                            <a href="#contact" class="btn header-li__btn">
-                                <span class="btn__text header-li__btnText">お問い合わせ</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <!-- /.header -->
+<?php get_header(); ?>
 
     <section class="page-top">
         <div class="inner page-top__inner">
             <div class="page-top__titleArea pageProduct__titleArea">
-                <h2 class="page-top__title gradation-text">PRODUCT</h2>
+                <h1 class="page-top__title gradation-text">PRODUCT</h1>
                 <p class="page-top__subTitle">製品一覧</p>
             </div>
+        </div>
+        <div class="hero-floatings">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square01.png" alt="ブロック" class="hero-floating hero-floating01">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square02.png" alt="ブロック" class="hero-floating hero-floating02">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square03.png" alt="ブロック" class="hero-floating hero-floating03">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square04.png" alt="ブロック" class="hero-floating hero-floating04">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square05.png" alt="ブロック" class="hero-floating hero-floating05">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square06.png" alt="ブロック" class="hero-floating hero-floating06">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square02.png" alt="ブロック" class="hero-floating hero-floating07">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/strive-dot-square02.png" alt="ブロック" class="hero-floating hero-floating08">
         </div>
     </section>
     <!-- /.page-top -->
@@ -95,34 +26,35 @@
                 <h4 class="section__enTitle pageProduct__enTitle section__enTitle--right">PRODUCT</h4>
                 <div class="inner pageProduct-inner">
                     <div class="pageProduct-items">
-                        <div class="pageProduct-item">
-                            <nav class="pageProduct-nav">
+                        <div id="pageProduct-item01" class="pageProduct-item">
+                            <nav id="navbar" class="pageProduct-nav">
                                 <ul class="pageProduct-ul">
-                                    <li class="pageProduct-list active">
-                                        SV-CV Series
+                                    <li class="pageProduct-list">
+                                        <a href="#pageProduct-item01" class="pageProduct-list__item">SV-CV Series</a>
                                     </li>
                                     <li class="pageProduct-list">
-                                        SV-TP Series
+                                        <a href="#pageProduct-item02" class="pageProduct-list__item">SV-TP Series</a>
                                     </li>
                                     <li class="pageProduct-list">
-                                        SV-ST Series
+                                        <a href="#pageProduct-item03" class="pageProduct-list__item">SV-ST Series</a>
                                     </li>
                                     <li class="pageProduct-list">
-                                        SV-PT Series
+                                        <a href="#pageProduct-item04" class="pageProduct-list__item">SV-PT Series</a>
                                     </li>
                                     <li class="pageProduct-list">
-                                        SV-AF Series
+                                        <a href="#pageProduct-item05" class="pageProduct-list__item">SV-AF Series</a>
                                     </li>
                                     <li class="pageProduct-list">
-                                        SV-MG Series
+                                        <a href="#pageProduct-item06" class="pageProduct-list__item">SV-MG Series</a>
                                     </li>
                                 </ul>
                             </nav>
+                            <div class="pageProduct-space"></div>
                             <div class="pageProduct-contents">
                                 <p class="pageProduct-item__head">屋内用LEDビジョン</p>
                                 <h3 class="pageProduct-item__title">SV-CV Series</h3>
                                 <figure class="pageProduct-item__imgArea">
-                                    <img src="./images/strive-pageProduct-item01.png" alt="SV-CV Series" class="pageProduct-item__img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/strive-pageProduct-item01.png" alt="SV-CV Series" class="pageProduct-item__img">
                                 </figure>
                                 <p class="pageProduct-item__text">SV-CVシリーズは、1枚のLEDモジュールが、まるでゴム板のように自由自在に曲げることができ、圧倒的な軽さが特徴的です。柔軟性の高い素材を基盤に用いることで、曲線や円形など、曲げられた形状に合わせて自由自在に設置することができるため、丸い柱やアーチ型の天井など、斜めの面に取り付けることができます。また、1つ1つのモジュールが圧倒的に軽く、設置が非常に簡単です。通常の曲がらないLEDより柔軟にデザインすることができるため、展示会場やイベント会場、博物館などの空間で幅広く使用されています。</p>
                                 <div class="pageProduct-dlArea">
@@ -165,34 +97,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pageProduct-item">
-                            <nav class="pageProduct-nav">
-                                <ul class="pageProduct-ul">
-                                    <li class="pageProduct-list">
-                                        SV-CV Series
-                                    </li>
-                                    <li class="pageProduct-list active">
-                                        SV-TP Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-ST Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-PT Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-AF Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-MG Series
-                                    </li>
-                                </ul>
-                            </nav>
+                        <div id="pageProduct-item02" class="pageProduct-item">
+                            <div class="pageProduct-space"></div>
                             <div class="pageProduct-contents">
                                 <p class="pageProduct-item__head">透過型LEDビジョン</p>
                                 <h3 class="pageProduct-item__title">SV-TP Series</h3>
                                 <figure class="pageProduct-item__imgArea">
-                                    <img src="./images/strive-pageProduct-item02.png" alt="SV-CV Series" class="pageProduct-item__img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/strive-pageProduct-item02.png" alt="SV-CV Series" class="pageProduct-item__img">
                                 </figure>
                                 <p class="pageProduct-item__text">SV-TPシリーズは、透過型LEDビジョンの一種で、多数のLEDチップを含む細長いモジュールが横並びに配置されたパネルで構成されています。LEDビジョンの背景が透過されるため、ディスプレイに情報、グラフィックス、ビデオコンテンツの高品質な表示しながらも、外側の景色を見ることができるため、これまでにない新たな体験を提供することが可能です。屋内外で使用可能で、広告・看板・ショーウィンドウをはじめとして、最近では、スポーツ競技の試合会場などでも、リアルタイムのスコア表示や選手紹介などに使用されることもあります。</p>
                                 <div class="pageProduct-dlArea">
@@ -235,34 +146,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pageProduct-item">
-                            <nav class="pageProduct-nav">
-                                <ul class="pageProduct-ul">
-                                    <li class="pageProduct-list">
-                                        SV-CV Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-TP Series
-                                    </li>
-                                    <li class="pageProduct-list active">
-                                        SV-ST Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-PT Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-AF Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-MG Series
-                                    </li>
-                                </ul>
-                            </nav>
+                        <div id="pageProduct-item03" class="pageProduct-item">
+                            <div class="pageProduct-space"></div>
                             <div class="pageProduct-contents">
                                 <p class="pageProduct-item__head">屋内用LEDビジョン</p>
                                 <h3 class="pageProduct-item__title">SV-ST Series</h3>
                                 <figure class="pageProduct-item__imgArea">
-                                    <img src="./images/strive-pageProduct-item03.png" alt="SV-CV Series" class="pageProduct-item__img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/strive-pageProduct-item03.png" alt="SV-CV Series" class="pageProduct-item__img">
                                 </figure>
                                 <p class="pageProduct-item__text">SV-STシリーズは、超高解像度な屋内用LEDビジョンです。 ピッチが1.25mmと非常に小さく、1平方メートルあたり約64万個敷き詰められたLEDが圧倒的な解像度のシャープな映像表示が可能とします。また、カラーマネージメントシステムにより色の再現性が高く、広い視野角を持つため、どの位置からでも映像を見ることができます。さらに、高いコントラスト比や明るさを実現しており、暗い場所でも鮮明な映像を表示することができ、映画館や会議室など人が集まる場所でよく使用されます。また、複数のユニットを組み合わせることで、大型スクリーンにすることも可能であり、その柔軟性から、様々な場所や形状に合わせたカスタマイズも行えます。</p>
                                 <div class="pageProduct-dlArea">
@@ -305,34 +195,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pageProduct-item">
-                            <nav class="pageProduct-nav">
-                                <ul class="pageProduct-ul">
-                                    <li class="pageProduct-list">
-                                        SV-CV Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-TP Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-ST Series
-                                    </li>
-                                    <li class="pageProduct-list active">
-                                        SV-PT Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-AF Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-MG Series
-                                    </li>
-                                </ul>
-                            </nav>
+                        <div id="pageProduct-item04" class="pageProduct-item">
+                            <div class="pageProduct-space"></div>
                             <div class="pageProduct-contents">
                                 <p class="pageProduct-item__head">ポスター型LEDビジョン</p>
                                 <h3 class="pageProduct-item__title">SV-PT Series</h3>
                                 <figure class="pageProduct-item__imgArea">
-                                    <img src="./images/strive-pageProduct-item04.png" alt="SV-CV Series" class="pageProduct-item__img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/strive-pageProduct-item04.png" alt="SV-CV Series" class="pageProduct-item__img">
                                 </figure>
                                 <p class="pageProduct-item__text">SV-PT PROシリーズは、小型で持ち運びが簡単なポスター型のLEDビジョンです。室内でも視認性を維持することができるため、小型ながらも1つ設置するだけで、抜群の存在感を誇り、室内のイメージや雰囲気もガラッと変えることができます。姿見の鏡のようなスタンドタイプや、縦吊りタイプなど様々な設置方法があるので、設置場所を問いません。また複数のビジョンをつなげ、1つの画面として表示することもできるため、大胆な表現も可能です。また、小型で持ち運びが簡単なため、展示会やイベントなどでの移動展示にも適しています。</p>
                                 <div class="pageProduct-dlArea">
@@ -413,34 +282,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pageProduct-item">
-                            <nav class="pageProduct-nav">
-                                <ul class="pageProduct-ul">
-                                    <li class="pageProduct-list">
-                                        SV-CV Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-TP Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-ST Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-PT Series
-                                    </li>
-                                    <li class="pageProduct-list active">
-                                        SV-AF Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-MG Series
-                                    </li>
-                                </ul>
-                            </nav>
+                        <div id="pageProduct-item05" class="pageProduct-item">
+                            <div class="pageProduct-space"></div>
                             <div class="pageProduct-contents">
                                 <p class="pageProduct-item__head">屋外用LEDビジョン</p>
                                 <h3 class="pageProduct-item__title">SV-AF Series</h3>
                                 <figure class="pageProduct-item__imgArea">
-                                    <img src="./images/strive-pageProduct-item05.png" alt="SV-CV Series" class="pageProduct-item__img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/strive-pageProduct-item05.png" alt="SV-CV Series" class="pageProduct-item__img">
                                 </figure>
                                 <p class="pageProduct-item__text">SV-AFシリーズは、メンテナンス性に優れた屋外用のLEDビジョンです。アルミ製でできたフレームは、軽量で耐久性に優れているため、風や雨、震動にも耐えることができます。また高輝度、高コントラスト、高解像度の映像表示が可能で、視認性が非常に高いため、屋外での使用に適しています。また、LEDパネルのメンテナンスや交換が非常に簡単です。最近は、広告表示やイベント用途に限らず、スタジアムのスコアボードやビルの外壁に設置されるなど、多くの用途に使用されています。</p>
                                 <div class="pageProduct-dlArea">
@@ -559,34 +407,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pageProduct-item">
-                            <nav class="pageProduct-nav">
-                                <ul class="pageProduct-ul">
-                                    <li class="pageProduct-list">
-                                        SV-CV Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-TP Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-ST Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-PT Series
-                                    </li>
-                                    <li class="pageProduct-list">
-                                        SV-AF Series
-                                    </li>
-                                    <li class="pageProduct-list active">
-                                        SV-MG Series
-                                    </li>
-                                </ul>
-                            </nav>
+                        <div id="pageProduct-item06" class="pageProduct-item">
+                            <div class="pageProduct-space"></div>
                             <div class="pageProduct-contents">
                                 <p class="pageProduct-item__head">曲面対応屋外用LEDビジョン</p>
                                 <h3 class="pageProduct-item__title">SV-MG Series</h3>
                                 <figure class="pageProduct-item__imgArea">
-                                    <img src="./images/strive-pageProduct-item06.png" alt="SV-MG Series" class="pageProduct-item__img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/strive-pageProduct-item06.png" alt="SV-MG Series" class="pageProduct-item__img">
                                 </figure>
                                 <p class="pageProduct-item__text">SV-MGシリーズは、カーブや曲面への設置が可能な屋外用のLEDビジョンです。市販の液晶ディスプレイの約10倍の輝度をもつため、屋外でも太陽光に負けず、鮮明に情報を表示することが可能です。また、アルミ製のフレームは、軽量で耐久性に優れているため、風や雨、震動にも耐えることができます。LEDの点灯数や解像度、フレームのサイズや形状、保護カバーの種類など、カスタマイズが可能であり、お客様のニーズに合わせた設計ができます。</p>
                                 <div class="pageProduct-dlArea">
@@ -710,49 +537,4 @@
             </section>
             <!-- /.section pageProduct -->
 
-            <footer class="footer">
-                <inner class="footer-inner">
-                    <div class="footer-logoArea">
-                        <a href="#" class="footer-logo">
-                            <img src="./images/strive-logo.png" alt="ロゴ" class="footer-logo__img">
-                        </a>
-                    </div>
-                    <div class="footer-textArea">
-                        <p class="footer-companyName">ストライブ株式会社</p>
-                        <p class="footer-companyAddress">〒542-0073 大阪府大阪市中央区日本橋1-2-6 日本橋河辺ビル5F</p>
-                        <p class="footer-companyContact">Tel.06-6484-871　Fax.06-6484-8717</p>
-                        <nav class="footer-nav">
-                            <ul class="footer-ul">
-                                <li class="footer-list">
-                                    <a href="" class="footer-list__item">LEDについて</a>
-                                </li>
-                                <li class="footer-list">
-                                    <a href="" class="footer-list__item">製品一覧</a>
-                                </li>
-                                <li class="footer-list">
-                                    <a href="" class="footer-list__item">会社概要</a>
-                                </li>
-                                <li class="footer-list">
-                                    <a href="" class="footer-list__item">お問い合わせ</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </inner>
-                <p class="copyright">© strive inc. All rights reserved.</p>
-            </footer>
-            <!-- /.footer -->
-        </div>
-        <!-- /.page-contents -->
-    </div>
-    <!-- /.page-container -->
-
-
-    <!-- jQueryライブラリ読み込みコード -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- slickを読み込む -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="./js/main.js"></script>
-</body>
-
-</html>
+<?php get_footer(); ?>

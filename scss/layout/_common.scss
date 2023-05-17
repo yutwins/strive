@@ -38,6 +38,7 @@ $breakpoints: (
 
 .section {
     position: relative;
+    overflow: hidden;
 }
 
 .section__enTitle {
@@ -133,7 +134,7 @@ $breakpoints: (
         position: absolute;
         bottom: 0;
         right: 0;
-        background: url(../../images/strive-page-top-bg.png) no-repeat center center / cover;
+        background: url(../images/strive-page-top-bg.png) no-repeat center center / cover;
     }
     
     @include mq("sp") {
@@ -142,16 +143,17 @@ $breakpoints: (
         &::before {
             width: 231px;
             height: 231px;
-            bottom: -50px;
-            right: -50px;
-            background: none;
-            background: linear-gradient(45deg, $color-blue03 0%, $color-blue02 100%);
-            filter: blur(115px);
+            width: 150%;
+            height: 150%;
+            bottom: -130px;
+            right: -150px;
+            // bottom: 0;
+            // right: 0;
+            // background: none;
+            // background: linear-gradient(45deg, $color-blue03 0%, $color-blue02 100%);
+            // filter: blur(95px);
+            background: url(../images/strive-page-top-bg-sp02.png) no-repeat center center / cover;
         }
-    }
-
-    &__inner {
-
     }
 
     &__titleArea {
@@ -168,8 +170,9 @@ $breakpoints: (
         line-height: 1.2;
         font-weight: 500;
         letter-spacing: .48em;
-        background: -webkit-linear-gradient(1800deg, $color-gray03 0%, $pureWhite 80%, $pureWhite 100%); /* 背景色にグラデーションを指定 初期値を設定 */
+        background: -webkit-linear-gradient(1800deg, $color-gray03 0%, $pureWhite 35%, $pureWhite 100%); /* 背景色にグラデーションを指定 初期値を設定 */
         background-clip: text;
+        white-space: nowrap;
         
         @include mq("sp") {
             font-size: 43px;
@@ -192,6 +195,7 @@ $breakpoints: (
     width: 100%;
     height: auto;
     position: relative;
+    z-index: 5;
 }
 .page-contents {
     width: 100%;
@@ -201,8 +205,9 @@ $breakpoints: (
     left: 0;
     background-color: $pureWhite;
     border-radius: 45px 45px 0 0;
-
+    
     @include mq("sp") {
         top: -32px;
+        border-radius: 30px 30px 0 0;
     }
 }

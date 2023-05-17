@@ -1,0 +1,187 @@
+@use "../globals/global" as *;
+
+.pageContact {
+
+    &-inner {
+        padding-top: 120px;
+        padding-bottom: 100px;
+
+        @include mq("sp") {
+            padding-top: 60px;
+            padding-bottom: 80px;
+        }
+    }
+}
+
+.contact-form {
+
+
+    &__row {
+
+        &:not(:first-child) {
+            margin-top: 30px;
+
+            @include mq("sp") {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    &__label {
+        font-weight: bold;
+    }
+
+    &__input {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+
+    &__submit {
+        width: 234px;
+        height: 58px;
+        margin: 60px auto 0;
+        display: grid;
+        place-items: center;
+        background-color: $base-color;
+        border-radius: 42px;
+        // overflow: hidden;
+
+        @include mq("sp") {
+            width: 246px;
+            height: 57px;
+            margin: 30px auto 0;
+        }
+
+        & > p {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            color: $pureWhite;
+            font-size: 17px;
+            font-weight: bold;
+            transition: all 0.3s ease 0s;
+            border-radius: 42px;
+
+            &:hover {
+                background-color: $pureWhite;
+                color: $base-color;
+                border: 1px solid $base-color;
+            }
+
+            @include mq("sp") {
+                font-size: 15px;
+            }
+        }
+
+        .wpcf7-spinner {
+            display: none;
+        }
+    }
+}
+.wpcf7-form {
+    max-width: 625px;
+    margin: 0 auto;
+
+    input[type="text"],
+    input[type="email"],
+    .wpcf7-form-control,
+    textarea {
+        width: 100%;
+        padding: 16px;
+        background-color: $color-gray11;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+
+        &::placeholder {
+            color: $color-gray12;
+            font-size: 15px;
+    
+            @include mq("sp") {
+                font-size: 13px;
+            }
+        }
+    }
+
+    textarea {
+        width: 100%;
+        height: 267px;
+        resize: vertical;
+
+         @include mq("sp") {
+            height: 174px;
+         }
+    }
+}
+
+[data-name="your-select"] {
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+    
+    &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 6px 0 6px;
+        border-color: $pureBlack transparent transparent transparent;
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        pointer-events: none;
+        z-index: 5;
+    }
+}
+.wpcf7-select {
+    color: $base-color;
+    font-weight: 500;
+
+    @include mq("sp") {
+        font-size: 13px;
+    }
+}
+
+.wpcf7 form.invalid .wpcf7-response-output {
+    border-color: $base-color;
+}
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: $base-color;
+
+    @media (max-width: 1080px) {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+.wpcf7-form-control {
+    appearance: none;
+    -webkit-appearance: none; /*Google Chrome/Safari対応*/
+    -moz-appearance: none; /*Firefox対応*/
+    -o-appearance: none; /*Opera対応*/
+}
+
+.wpcf7-submit {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        background-color: $pureWhite;
+        color: $base-color;
+    }
+}

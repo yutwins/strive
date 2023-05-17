@@ -14,11 +14,11 @@
 
     <!-- ②SEO対策の補助的措置 -->
     <!-- サイトのタイトル -->
-    <title>ストライブ株式会社</title>
+    <title>ストライブ株式会社 | LEDビジョンメーカー</title>
     <!-- キーワード -->
-    <meta name="keywords" content="">
+    <meta name="keywords" content="LED,LEDビジョン,ストライブ,strive,">
     <!-- サイトの説明 -->
-    <meta name="description" content="">
+    <meta name="description" content="私たちは自社で製造した最高基準の品質をもつLEDビジョンを提供しています。屋内 / 屋外広告、舞台展示、スポーツスタジアムのスコアボード等、世界中の様々な場面で活用されています。">
     <!-- 重複するURLを一本化 -->
     <link rel="canonical" href="">
 
@@ -34,12 +34,10 @@
     <meta name="twitter:site" content="">
 
     <!-- ④その他の指定 -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <!-- faviconの指定 -->
     <link rel="shortcut icon" href="./favicon.ico">
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <!-- 外部のCSSファイル -->
-    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"> -->
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,7 +50,7 @@
     <header class="header">
         <div class="header-inner">
             <div class="header-logoArea">
-                <a href="#" class="header-logo">
+                <a href="<?php echo esc_url(home_url( '/' )); ?>" class="header-logo">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/strive-logo.png" alt="ロゴ" class="header-logo__img">
                 </a>
             </div>
@@ -60,16 +58,16 @@
                 <nav class="header-nav">
                     <ul class="header-ul">
                         <li class="header-li">
-                            <a href="#about" class="header-li__item">LEDについて</a>
+                            <a href="<?php echo esc_url(home_url( 'about' )); ?>" class="header-li__item">LEDについて</a>
                         </li>
                         <li class="header-li">
-                            <a href="#product" class="header-li__item">製品一覧</a>
+                            <a href="<?php echo esc_url(home_url( 'product' )); ?>#" class="header-li__item">製品一覧</a>
                         </li>
                         <li class="header-li">
-                            <a href="#company" class="header-li__item">会社概要</a>
+                            <a href="<?php echo esc_url(home_url( 'company' )); ?>" class="header-li__item">会社概要</a>
                         </li>
                         <li class="header-li">
-                            <a href="#contact" class="btn header-li__btn">
+                            <a href="<?php echo esc_url(home_url( 'contact' )); ?>" class="btn header-li__btn">
                                 <span class="btn__text header-li__btnText">お問い合わせ</span>
                             </a>
                         </li>
