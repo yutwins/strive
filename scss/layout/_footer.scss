@@ -213,6 +213,7 @@
             @include mq("sp") {
                 margin-left: 16px;
                 font-size: 11px;
+                white-space: nowrap;
             }
         }
         

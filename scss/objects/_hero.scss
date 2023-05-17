@@ -2,9 +2,10 @@
 
 .hero {
     position: relative;
+    padding-bottom: 100px;
 
-    @media (max-width: 1100px) and (min-width: 768px) {
-        padding-bottom: 100px;
+    @include mq("sp") {
+        padding-bottom: 0;
     }
 
     &::before {
@@ -14,7 +15,6 @@
         height: 1067px;
         position: absolute;
         top: 0;
-        // left: -50px;
         left: 0;
         background: url(../images/strive-hero-bg-gradation.png) no-repeat center center / cover;
     }
@@ -53,7 +53,7 @@
                 display: block;
                 margin: 0 calc(50% - 50vw);
                 width: 100vw;
-                height: 75px;
+                height: 80px;
                 position: absolute;
                 top: 50%;
                 left: 0;

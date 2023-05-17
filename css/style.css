@@ -630,6 +630,7 @@ p {
   .cta-li__item {
     margin-left: 16px;
     font-size: 11px;
+    white-space: nowrap;
   }
 }
 .cta-li__btn {
@@ -670,10 +671,11 @@ p {
 
 .hero {
   position: relative;
+  padding-bottom: 100px;
 }
-@media (max-width: 1100px) and (min-width: 768px) {
+@media (max-width: 767px) {
   .hero {
-    padding-bottom: 100px;
+    padding-bottom: 0;
   }
 }
 .hero::before {
@@ -721,7 +723,7 @@ p {
   display: block;
   margin: 0 calc(50% - 50vw);
   width: 100vw;
-  height: 75px;
+  height: 80px;
   position: absolute;
   top: 50%;
   left: 0;
@@ -1193,7 +1195,7 @@ p {
 .mission {
   position: relative;
   z-index: 2;
-  margin-top: 90px;
+  margin-top: 0;
   background-color: #fff;
   border-radius: 45px 45px 0 0;
   overflow: hidden;
